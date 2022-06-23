@@ -1,0 +1,142 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --cor01:#3d1902ed;
+    --cor02:#40240C;
+    --cor03:#BFB3A4;
+    --cor04:#D9AD77;
+    --cor05:#8C5F27;
+
+}
+
+body {
+    background-color: var(--cor03);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor01),var(--cor05));
+    background-attachment: fixed;
+    width: 100%;
+    height:280px;
+    
+}
+header h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor03);
+    font-size: 56px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    text-shadow: 2px 2px 0px black;
+}
+header p {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    text-align: center;
+    color: var(--cor03);
+    text-shadow: 2px 2px 0px black;
+}
+nav  {
+
+    background-image: linear-gradient(to bottom, var(--cor01),var(--cor05));
+    background-attachment: fixed;
+    font-size: 22px;
+    margin: auto;
+}
+
+nav a {
+    color: white;
+    padding-left: 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    
+}
+:hover.menu {
+    color: var(--cor04);
+    font-size: large;
+    
+}
+main{
+    background-color: rgb(227, 212, 212);
+    height: auto;
+    min-width: 350px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    
+    text-align: center;
+}
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    padding: 5px;
+    color: var(--cor01);
+}
+.subtitulo{
+    padding-top: 10px;
+    color: var(--cor02);
+    font-family:Georgia, 'Times New Roman', Times, serif;;
+    font-size: 20px;
+}
+main p{
+    text-align: left;
+    color:var(--cor01);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.foto {
+   
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+aside img{
+    width: 100%;
+}
+footer{
+    color: var(--cor02);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+footer a{
+    color: var(--cor02);
+}
+footer img{
+
+    padding-top: 3px;
+    height: 20px;
+    width: 20px;
+} #tel{
+    padding: 5px;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+aside p{
+    padding-top: 10px;
+}
+.redes{
+    
+    width: 40px;
+    height: 40px;
+}
+aside picture{
+   display: block;
+   text-align: left;
+   
+}
+#imgins{
+    padding-left: 10px;
+}
