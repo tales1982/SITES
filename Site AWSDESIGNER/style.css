@@ -1,26 +1,27 @@
 @charset "UTF-8";
 *{
-    margin: 0px;
-    padding: 0px
+    margin: .1px;
+    padding: .1px
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/*
+POso usar para declara usando varealveis mais alguns hospedagen nao aceita muito bem(testei)
 :root{
-    --cor01:#3d1902ed;
+    --cor01:#3d1902;
     --cor02:#40240C;
-    --cor03:#BFB3A4;
+    --cor03:#bfb3a5;
     --cor04:#D9AD77;
     --cor05:#8C5F27;
 
 }
-
+*/
 body {
-    background-color: var(--cor03);
+    background-color:#bfb3a5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor01),var(--cor05));
+    background-image: linear-gradient(to bottom, #3d1902,#8C5F27);
     background-attachment: fixed;
     width: 100%;
     height:280px;
@@ -28,7 +29,7 @@ header {
 }
 header h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: var(--cor03);
+    color: #bfb3a5;
     font-size: 56px;
     text-align: center;
     max-width: 600px;
@@ -41,12 +42,12 @@ header p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 34px;
     text-align: center;
-    color: var(--cor03);
+    color: #bfb3a5;
     text-shadow: 2px 2px 0px black;
 }
 nav  {
 
-    background-image: linear-gradient(to bottom, var(--cor01),var(--cor05));
+    background-image: linear-gradient(to bottom, #3d1902,#8C5F27);
     background-attachment: fixed;
     font-size: 22px;
     margin: auto;
@@ -58,9 +59,10 @@ nav a {
     padding-right: 10px;
     text-decoration: none;
     
+    
 }
 :hover.menu {
-    color: var(--cor04);
+    color: #D9AD77;
     font-size: large;
     
 }
@@ -71,24 +73,25 @@ main{
     max-width: 1000px;
     margin: auto;
     padding: 10px;
-    
     text-align: center;
+    text-indent: 20px;
+    line-height: 2em;
 }
 main h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     padding: 5px;
-    color: var(--cor01);
+    color: #3d1902;
 }
 .subtitulo{
     padding-top: 10px;
-    color: var(--cor02);
+    color:#40240C;
     font-family:Georgia, 'Times New Roman', Times, serif;;
     font-size: 20px;
 }
 main p{
     text-align: left;
-    color:var(--cor01);
+    color:#3d1902;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     padding-top: 5px;
@@ -105,13 +108,13 @@ aside img{
     width: 100%;
 }
 footer{
-    color: var(--cor02);
+    color: #40240C;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
 }
 footer a{
-    color: var(--cor02);
+    color: #40240C;
 }
 footer img{
 
@@ -121,21 +124,19 @@ footer img{
 } #tel{
     padding: 5px;
     margin-top: 10px;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 aside p{
     padding-top: 10px;
 }
-.redes{
-    
-    width: 40px;
-    height: 40px;
+.redes{ 
+    width: 35px;
+    height: 35px;
 }
 aside picture{
    display: block;
    text-align: left;
-   
 }
 #imgins{
     padding-left: 10px;
