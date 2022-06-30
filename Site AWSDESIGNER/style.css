@@ -23,24 +23,26 @@ body {
 header {
     background-image: linear-gradient(to bottom, #3d1902,#8C5F27);
     background-attachment: fixed;
-    width: 100%;
-    height:280px;
+    width: 370px;
+    height:450px;
     
 }
 header h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: #bfb3a5;
-    font-size: 56px;
+    font-size: 40px;
     text-align: center;
-    max-width: 600px;
+    min-height: 150px;
+    min-width: 360px;
+    max-width: 1000px;
     margin: auto;
-    padding: 20px 10px 20px 10px;
+    padding: 10px;
     text-shadow: 2px 2px 0px black;
 }
 header p {
     
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 34px;
+    font-size: 32px;
     text-align: center;
     color: #bfb3a5;
     text-shadow: 2px 2px 0px black;
@@ -49,6 +51,8 @@ nav  {
 
     background-image: linear-gradient(to bottom, #3d1902,#8C5F27);
     background-attachment: fixed;
+    width: 370px;
+    height:30px;
     font-size: 22px;
     margin: auto;
 }
@@ -118,9 +122,9 @@ footer a{
 }
 footer img{
 
-    padding-top: 3px;
-    height: 20px;
-    width: 20px;
+    padding: 2px 2px 0px 2px;
+    height: 15px;
+    width: 15px;
 } #tel{
     padding: 5px;
     margin-top: 10px;
