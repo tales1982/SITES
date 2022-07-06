@@ -1,46 +1,63 @@
 @charset "UTF-8";
-*{
+
+* {
     margin: .1px;
     padding: .1px
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:wght@700&display=swap');
+:root {
 
+   
+    --cor1: #bd13ec;
+    --cor2: #dd63ff;
+    --cor3: #ff69b4;
+    --cor4: #e44f9c;
+    --cor5: #ff97d9;
+   
+   
 
-:root{
-    --fonte-titulo:'Lobster Two', cursive;
-    --cor1:#bd13ec;
-    --cor2:#dd63ff;
-    --cor3:#ff69b4;
-    --cor4:#e44f9c;
-    --cor5:#ff97d9;
-
-    
 }
 
-body{
-    background-image: linear-gradient(to bottom,  #cd3cf596,#f358bab3);
+body {
+    background-image: linear-gradient(to bottom, #ffffff96, #ffffffb3);
     background-attachment: fixed;
 }
 
-header{
-    background-color:var(--cor1) ;
+.cabecario {
+ background-image: url(imagens/cabecario.png);
+ width: auto;
+ height: 340px;
+}
+nav{
+    
+    display: flex, inline;
+   align-items: center;
+}
+nav>a{
+    color: #200580;
+    font-family: 'Oleo Script', cursive;
+    gap: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 18px;
+}
+nav>a:hover{
+    color: rgb(255, 102, 0);
+}
+.titulo{
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 85px;
     text-align: center;
-    font-size: 36px;
-    font-family: var(--fonte-titulo);
+    color: #56005b;
 }
 
 main{
-    margin: auto;
-    background-color:#f4e8f0;
-    max-width: 1000px;
-    min-width: 350px;
-    height: auto;
+    text-align: center;
+    color: #56005b;
+    font-family: 'Oleo Script', cursive;
+}
+.container{
+   
+flex-wrap: nowrap;
 }
 
-
-footer img{
-    padding-top: 2px 2px 0px 2px;
-    height: 20px;
-    width: 20px;
-}
