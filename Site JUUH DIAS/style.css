@@ -57,7 +57,11 @@ main{
     font-family: 'Oleo Script', cursive;
 }
 .container{
-   
-flex-wrap: nowrap;
+
+}
+aside{
+    height: 400px;
+    width: auto;
+    display: inline;
 }
 
