@@ -7,14 +7,14 @@
 
 :root {
 
-   
+
     --cor1: #bd13ec;
     --cor2: #dd63ff;
     --cor3: #ff69b4;
     --cor4: #e44f9c;
     --cor5: #ff97d9;
-   
-   
+
+
 
 }
 
@@ -24,16 +24,23 @@ body {
 }
 
 .cabecario {
- background-image: url(imagens/cabecario.png);
- width: auto;
- height: 340px;
-}
-nav{
+    background-image: url(imagens/cabecario.png);
+    background-repeat: round;
+    background-attachment: scroll;
+    width: auto;
+    max-width: 100;
+    min-height: 280px;
+    max-height: 340px;
     
-    display: flex, inline;
-   align-items: center;
 }
-nav>a{
+
+nav {
+
+    display: flex, inline;
+    align-items: center;
+}
+
+nav>a {
     color: #200580;
     font-family: 'Oleo Script', cursive;
     gap: 40px;
@@ -41,27 +48,53 @@ nav>a{
     font-size: 20px;
     padding-left: 18px;
 }
-nav>a:hover{
+
+nav>a:hover {
     color: rgb(255, 102, 0);
 }
-.titulo{
+
+.titulo {
     font-family: 'Lavishly Yours', cursive;
     font-size: 85px;
     text-align: center;
     color: #56005b;
 }
 
-main{
+main {
     text-align: center;
     color: #56005b;
     font-family: 'Oleo Script', cursive;
 }
-.container{
 
-}
-aside{
-    height: 400px;
-    width: auto;
-    display: inline;
+.img1 {
+    border-radius: 10px;
+
+    min-width: 320px;
+    max-width: 380px;
+    min-height: 320px;
+    max-height: 380px;
+    padding: 1px;
+    margin: 10px;
 }
 
+.img2 {
+    border-radius: 10px;
+
+    min-width: 320px;
+    max-width: 380px;
+    min-height: 320px;
+    max-height: 380px;
+    padding: 1px;
+    margin: 10px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+}
