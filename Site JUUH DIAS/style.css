@@ -25,6 +25,7 @@ body {
 
 .cabecario {
  background-image: url(imagens/cabecario.png);
+ background-repeat: repeat-x;
  width: auto;
  height: 340px;
 }
