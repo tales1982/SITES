@@ -81,7 +81,7 @@ nav>a:hover {
 }
 
 .b2-pai {
-    padding-top: 250px;
+    padding-top: 260px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -94,12 +94,15 @@ nav>a:hover {
 }
 
 .b3 {
-    padding-top: 200px;
+    display: flex;
     justify-content: center;
-    text-align: center;
-    margin: auto;
+    width: 98vh;
+    padding-top: 200px;
+    
+    
+    
     height: auto;
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -111,11 +114,23 @@ nav>a:hover {
     padding-top: 10px;
 
 }
-
-.b3>h1 {
-    font-family: 'Oleo Script', cursive;
+.b3>p{
+   
+    border:2px solid black;
+    width: 1000px;
     color: #1f0120;
+    font-family: 'Oleo Script', cursive;
+    font-size: 22px;
+    padding: 5px;
+    
+}
 
+.b3>p>strong{
+    display: flex;
+    justify-content: center;
+    color: #1f0120;
+    font-size: 28px;
+   
 }
 
 .map {
