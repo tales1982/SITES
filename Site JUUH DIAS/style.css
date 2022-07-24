@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 * {
-    margin: .1px;
-    padding: .1px
+    box-sizing: border-box;
+    margin: .0px;
+    padding: .0px
 }
 
 :root {
@@ -19,18 +20,15 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #ffffff96, #ffffffb3);
+    background-image: linear-gradient(to bottom, #fed6d6, #fae2e9);
     background-attachment: fixed;
 }
 
 .cabecario {
-    background-image: url(imagens/cabecario.png);
-    background-repeat: round;
-    background-attachment: scroll;
-    width: auto;
-    max-width: 100;
-    min-height: 280px;
-    max-height: 340px;
+    background-image: url(imagens/002.jpg);
+    background-position: y;
+    height: 255px;
+    width: 100%;
 }
 
 nav {
@@ -46,12 +44,10 @@ nav>a {
     text-decoration: none;
     font-size: 20px;
     padding-left: 18px;
-
 }
 
 nav>a:hover {
-    color: rgb(255, 102, 0);
-    
+    color: rgb(222, 22, 15);
 }
 
 .titulo {
@@ -61,41 +57,104 @@ nav>a:hover {
     color: #56005b;
 }
 
-main {
+.h2 {
     text-align: center;
     color: #56005b;
     font-family: 'Oleo Script', cursive;
+    font-size: 26px;
 }
 
-.img1 {
-    border-radius: 10px;
-
-    min-width: 320px;
-    max-width: 380px;
-    min-height: 320px;
-    max-height: 380px;
-    padding: 1px;
-    margin: 10px;
-}
-
-.img2 {
-    border-radius: 10px;
-
-    min-width: 320px;
-    max-width: 380px;
-    min-height: 320px;
-    max-height: 380px;
-    padding: 1px;
-    margin: 10px;
-}
-
-.container1 {
+.b-pai {
+    padding-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    row-gap: 10px;
-    column-gap: 30px;
+
+
+
+}
+
+.b-filho {
+    margin: 30px;
+    width: 416px;
+    height: 333px;
+}
+
+.b2-pai {
+    padding-top: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.b2-filho {
+    margin: 30px;
+    width: 416px;
+    height: 333px;
+}
+
+.b3 {
+    display: flex;
+    justify-content: center;
+    width: 98vh;
+    padding-top: 200px;
+    
+    
+    
+    height: auto;
+    width: 100%;
+
+}
+
+.texto {
+    margin: auto;
+    color: #1f0120;
+    font-family: 'Oleo Script', cursive;
+    font-size: 22px;
+    padding-top: 10px;
+
+}
+.b3>p{
+   
+    border:2px solid black;
+    width: 1000px;
+    color: #1f0120;
+    font-family: 'Oleo Script', cursive;
+    font-size: 22px;
+    padding: 5px;
+    
+}
+
+.b3>p>strong{
+    display: flex;
+    justify-content: center;
+    color: #1f0120;
+    font-size: 28px;
+   
+}
+
+.map {
+
+    display: flex;
+    justify-content: center;
+    color: #1f0120;
+    font-family: 'Oleo Script', cursive;
+    font-size: 22px;
+    padding-top: 80px;
+  
+
+}
+
+.map>article>h1 {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #1f0120;
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 60px;
 }
