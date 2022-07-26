@@ -157,6 +157,9 @@ nav>a:hover {
 .gallery-titulo{
     display: flex;
     justify-content: center;
+    color: #56005b;
+    font-family: 'Oleo Script', cursive;
+    font-size: 26px;
     padding: 40px;
 }
 .gallery-container{
