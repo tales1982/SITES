@@ -1,0 +1,11 @@
+/*
+para ativar o sass. 
+sass --watch sass/style.sass:css/style.css
+------------------------------------------------
+*/
+
+/*Import variables*/
+@import"./variables.scss";
+@import"home.scss";
+@import"pages.scss";
+/*---------------------------------------------*/

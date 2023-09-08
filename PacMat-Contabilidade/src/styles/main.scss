@@ -1,0 +1,202 @@
+$fontPrincipal: sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fontPrincipal;
+
+}
+
+p{
+    font-size: 13px;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.cabecario{
+    padding-top: 50px;
+    font-weight: bold;
+
+    &_img{
+        height: 75px;
+    }
+
+ &_texto{
+       display: flex;
+       flex-direction: row;
+       font-size: 11px;
+       padding-left: 75px;
+    }
+}
+
+.dados{
+
+    .input input{
+       border: none;
+        width: 70px;
+    }
+
+   #client{
+    width: 500px;
+    margin: 5px 0px 5px 20px;
+   }
+
+
+padding-top: 20px;
+    &_clientes{
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+    }
+
+
+
+}
+
+.detalhes{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+  
+}
+
+.dados_maquinas{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    font-size: 14px;
+
+    &__p1{
+        display: flex;
+        flex-direction: column;
+
+        #material{
+            margin-left: 31px;
+        }
+        #modelo{
+            margin-left: 58px;
+        }
+        #equip{
+            margin-left: 14px;
+        }
+    }
+
+    &__p2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+
+        #marque{
+            margin-left: 42px;
+        }
+        #serie{
+            margin-left: 14px;
+        }
+        #option{
+            padding-left: 40px;
+            margin-left: 45px;
+        }
+    }
+
+}
+
+.input input,select{
+    border: none;
+    width: 90px;
+    &:hover{
+        background-color: #ccc;
+    }
+}
+
+select {
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit, como o Chrome e o Safari */
+    -moz-appearance: none; /* Para navegadores baseados em Gecko, como o Firefox */
+    appearance: none; /* Para navegadores modernos */
+    background-color: transparent;
+    &:hover {
+    cursor: pointer; /* Altere o cursor quando passar o mouse sobre o select */
+    }
+}
+
+.datas{
+    font-size: 14px;
+    font-weight: bold;
+
+    &_inicio, &_fim{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-top: 4px;
+    input{
+        width: 70px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+font-weight: bold;
+color:rgb(2, 94, 2);
+    #periodo{
+        width: 45px;
+    }
+    #dias{
+        color:rgb(2, 94, 2);
+        font-weight: bold;
+    }
+    input{
+        padding-left: 15px;
+        width: 300px;
+        font-weight: bold;
+        color:rgb(2, 94, 2);
+    }
+    
+}
+
+.element-com-seta::after {
+    content: "→"; /* Define o conteúdo da pseudo-classe como uma seta */
+    color:rgb(2, 94, 2); /* Define a cor da seta */
+    font-size: 18px; /* Define o tamanho da fonte da seta */
+    margin-left: 5px; /* Define a margem à esquerda para separar a seta do texto */
+  }
+
+.interacao{
+    display: flex;
+    flex-direction: column;
+font-size: 12px;
+
+    &_elemento__1{
+  
+    
+
+    }
+    &_elemento__2{
+    
+    }
+    &_elemento__3{
+
+    }
+    &_elemento__4{
+    
+    }
+    &_elemento__5{
+    
+    }
+    
+}

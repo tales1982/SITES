@@ -1,0 +1,40 @@
+
+#header{
+    padding-top: 20px;
+    & .active{
+        color: white;
+        font-weight: 700;
+    } 
+}
+.arrow{
+    display: flex;
+   justify-content: center;
+   padding-top: 150px;
+   & .arrow1{
+    
+    width: 100px;
+}
+}
+.conteiner-text{
+    padding-left: 15px;
+    padding-top: 250px;
+   
+}
+.btn-1{
+    padding-left: 20px;
+    padding-top: 30px; 
+      
+    }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 5vh;
+  background-color: $footer;
+  & .link {
+    color: rgb(247, 246, 246);
+    text-decoration: none;
+
+  }
+}

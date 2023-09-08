@@ -1,0 +1,94 @@
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.container-01 {
+    background-image: url(/imagens/home/01.jpg);
+  }
+  &.container-02 {
+    background-image: url(/imagens/home/03.jpg);
+  }
+  &.container-03 {
+    background-image: url(/imagens/home/02.gif);
+  }
+  &.container-04 {
+    background-image: url(/imagens/home/04.jpg);
+  }
+  &.container-05 {
+    background-image: url(/imagens/falcon9/01.jpg);
+  }
+  &.container-06 {
+    background-image: url(/imagens/falcon9/02.jpg);
+  }
+  &.container-07 {
+    background-image: url(/imagens/falcon9/08.jpg);
+  }
+  &.container-08 {
+    background-color: black;
+  }
+  &.container-09 {
+    background-image: url(/imagens/humanFlight/01.jpg);
+  }
+  &.container-11 {
+    background-image: url(/imagens/humanFlight/02.jpg);
+  }
+  &.container-12 {
+    background-image: url(/imagens/humanFlight/03.jpg);
+  }
+  &.container-13 {
+    background-image: url(/imagens/humanFlight/04.jpg);
+  }
+  &.container-14 {
+    background-image: url(/imagens/humanFlight/05.jpg);
+  }
+  &.container-15 {
+    background-color: black;
+  }
+}
+/*start-carrosel*/
+
+.carrossel01 {
+  background-image: url(/imagens/falcon9/03.jpg);
+}
+.carrossel02 {
+  background-image: url(/imagens/falcon9/04.jpg);
+}
+.carrossel03 {
+  background-image: url(/imagens/falcon9/05.jpg);
+}
+.carrossel04 {
+  background-image: url(/imagens/falcon9/06.jpg);
+}
+.carrossel05 {
+  background-image: url(/imagens/falcon9/07.jpg);
+}
+.carrossel06 {
+  background-image: url(/imagens/falcon9/09.jpg);
+}
+.carrossel07 {
+  background-image: url(/imagens/falcon9/10.jpg);
+}
+.carrossel08 {
+  background-image: url(/imagens/falcon9/11.jpg);
+}
+.carrossel09 {
+  background-image: url(/imagens/falcon9/12.jpg);
+}
+.carrossel10 {
+  background-image: url(/imagens/falcon9/13.jpg);
+}
+.carrossel11 {
+  background-image: url(/imagens/falcon9/14.jpg);
+}
+.textbackground {
+  background-color: black;
+  font-size: 18px;
+}
+
+/*end-carrosel*/
+
+.img-logo {
+  width: 160px;
+}

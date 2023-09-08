@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #000000f6;
+}
+.telefone {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.conteiner {
+  width: 100vw;
+}
+
+/*******************apresentaçao do site**********************/
+.texto-top {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 48px;
+  text-align: center;
+}
+.texto-principal{
+   font-size: 90px;
+  }
+.texto-top > h1 {
+  color: #e29e18;
+  text-shadow: 1px 1px white;
+}
+.h2 {
+  font-family: "Oleo Script", cursive;
+  color: #e29e18;
+  font-size: 22px;
+}
+/******Primeira parte do site as 3 primeiras fotose paragrafos********/
+.bloco1,
+.bloco2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  width: auto;
+}
+.foto {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #e29e18;
+  border-radius: 10px;
+}
+.foto:hover {
+  border: 4px solid white;
+}
+.texto {
+  text-align: justify;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: rgb(219, 166, 19);
+  font-size: 20px;
+  font-family: "Oleo Script", cursive;
+  width: 320px;
+  letter-spacing: 1px;
+}
+
+.bloco3 {
+  border: 2px solid #e29e18;
+  border-radius: 10px;
+  color: #e29e18;
+  font-family: "Oleo Script", cursive;
+  font-size: 24px;
+  width: 98%;
+  margin: auto;
+  padding: 5px;
+}
+
+strong {
+  display: flex;
+  justify-content: center;
+  color: #e29e18;
+  font-size: 28px;
+}
+.icones {
+  width: 70px;
+  background: none;
+  border-radius: 50px;
+  
+}
+.icones:hover {
+border: 4px solid gold;
+
+}
+
+.link-home{
+ color: #e29e18;
+  font-family: "Oleo Script", cursive;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.link-pagina2{
+  color: #e29e18;
+  font-family: "Oleo Script", cursive;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-top: 10px;
+
+}
+/*****INICIO DO CARROSSEL********/
+.carrossel{
+ margin: auto;
+  width:400px;
+
+  padding: 30px;
+  
+
+}
+
+
+/***************INICIO DO MEDIA QUERY******************
+/*responsibilidade do site*/
+@media (max-width: 1024px) {
+  .texto-top {
+    font-family: "Lavishly Yours", cursive;
+    font-size: 44px;
+    text-align: center;
+    color: #e29e18;
+  }
+  .h2 {
+    font-family: "Oleo Script", cursive;
+    color: #e29e18;
+    font-size: 24px;
+  }
+  .texto-top > h1 {
+    color: #e29e18;
+    text-shadow: 1px 1px white;
+  }
+  .foto {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    width: 318px;
+  }
+  
+  .texto {
+    text-align: center;
+    padding: 10px 5px 25px 5px;
+    color: rgb(219, 166, 19);
+    font-size: 18px;
+    font-family: "Oleo Script", cursive;
+    width: 320px;
+    letter-spacing: 1px;
+  }
+  .bloco1,
+  .bloco2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    width: auto;
+  }
+  .bloco3 {
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    color: #e29e18;
+    font-family: "Oleo Script", cursive;
+    font-size: 18px;
+    width: auto;
+  }
+  .bloco3 > p {
+    margin: 8px;
+  }
+  
+}
+.bloco4 {
+  color: #e29e18;
+  text-align: right;
+  padding-right: 35px;
+}
+
+
+
+@media (max-width: 768px) {
+  .texto-top {
+    font-family: "Lavishly Yours", cursive;
+    font-size: 36px;
+    text-align: center;
+    color: #e29e18;
+  }
+  .texto-principal{
+   font-size: 60px;
+  }
+  .h2 {
+    font-family: "Oleo Script", cursive;
+    color: #e29e18;
+    font-size: 20px;
+  }
+  .texto-top > h1 {
+    color: #e29e18;
+    text-shadow: 1px 1px white;
+  }
+  .foto {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    width: 318px;
+  }
+  .texto {
+    text-align: center;
+    padding: 10px 5px 25px 5px;
+    color: rgb(219, 166, 19);
+    font-size: 18px;
+    font-family: "Oleo Script", cursive;
+    width: 320px;
+    letter-spacing: 1px;
+  }
+  .bloco1,
+  .bloco2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    width: auto;
+  }
+  .bloco3 {
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    color: #e29e18;
+    font-family: "Oleo Script", cursive;
+    font-size: 18px;
+    width: auto;
+  }
+  .bloco3 > p {
+    margin: 8px;
+  }
+  .icones{
+    width: 45px;
+  }
+}
+
+@media (max-width: 425px) {
+  .texto-top {
+    font-family: "Lavishly Yours", cursive;
+    font-size: 28px;
+    text-align: center;
+    color: #e29e18;
+  }
+  .h2 {
+    font-family: "Oleo Script", cursive;
+    color: #e29e18;
+    font-size: 22px;
+  }
+  .texto-top > h1 {
+    color: #e29e18;
+    text-shadow: 1px 1px white;
+  }
+  .foto {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    width: 418px;
+    padding: auto;
+  }
+  .texto {
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    color: rgb(219, 166, 19);
+    font-size: 20px;
+    font-family: "Oleo Script", cursive;
+    width: auto;
+    letter-spacing: 1px;
+  }
+  .bloco1,
+  .bloco2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    width: auto;
+  }
+  .bloco3 {
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    color: #e29e18;
+    font-family: "Oleo Script", cursive;
+    font-size: 18px;
+    width: auto;
+  }
+  .bloco3 > p {
+    margin: 8px;
+  }
+  .icones{
+    width: 45px;
+  }
+}
+
+@media (max-width: 375px) {
+  .texto-top {
+    font-family: "Lavishly Yours", cursive;
+    font-size: 24px;
+    text-align: center;
+    color: #e29e18;
+  }
+  .h2 {
+    font-family: "Oleo Script", cursive;
+    color: #e29e18;
+    font-size: 18px;
+  }
+  .icones{
+    width: 45px;
+  }
+  .texto-top > h1 {
+    color: #e29e18;
+    text-shadow: 1px 1px white;
+  }
+  .foto {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    width: 318px;
+  }
+  .texto {
+    text-align: center;
+    padding: 10px 5px 15px 5px;
+    color: rgb(219, 166, 19);
+    font-size: 16px;
+    font-family: "Oleo Script", cursive;
+    width: 320px;
+    letter-spacing: 1px;
+  }
+  .bloco1,
+  .bloco2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    width: auto;
+  }
+  .bloco3 {
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    color: #e29e18;
+    font-family: "Oleo Script", cursive;
+    font-size: 18px;
+    width: auto;
+  }
+  .bloco3 > p {
+    margin: 8px;
+  }
+} .carrossel{
+    width: 370px;
+  }
+
+@media (max-width: 360px) {
+  .texto-top {
+    font-family: "Lavishly Yours", cursive;
+    font-size: 24px;
+    text-align: center;
+    color: #e29e18;
+  }
+  .h2 {
+    font-family: "Oleo Script", cursive;
+    color: #e29e18;
+    font-size: 14px;
+  }
+  .texto-top > h1 {
+    color: #e29e18;
+    text-shadow: 1px 1px white;
+  }
+  .foto {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    width: 318px;
+  }
+  .icones{
+    width: 45px;
+  }
+
+  .texto {
+    text-align: center;
+    padding: 10px 5px 15px 5px;
+    color: rgb(219, 166, 19);
+    font-size: 16px;
+    font-family: "Oleo Script", cursive;
+    width: 320px;
+    letter-spacing: 1px;
+  }
+  .bloco1,
+  .bloco2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    width: auto;
+  }
+  .bloco3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #e29e18;
+    border-radius: 10px;
+    color: #e29e18;
+    font-family: "Oleo Script", cursive;
+    font-size: 16px;
+    width: 318px;
+    
+  }
+  .bloco3 > p {
+    margin: 8px;
+  }
+ .texto2{
+  font-size: 12px;
+ } .carrossel{
+    width: 360px;
+  }
+  .icones{
+    width: 45px;
+  }
+
+}/*****************FIM DO MEDIA QUERY******************/
+
+/***********Endereço e roda PE***************/
+.map {
+  display: flex;
+  justify-content: center;
+  color: rgb(219, 166, 19);
+  font-family: "Oleo Script", cursive;
+  font-size: 22px;
+  padding-top: 80px;
+}
+
+.map > article > h1 {
+  display: flex;
+  justify-content: center;
+}
+.map > a {
+  padding-top: 8px;
+  padding-left: 20px;
+  color: rgb(219, 166, 19);
+  font-family: "Oleo Script", cursive;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+footer {
+  padding-top: 60px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  color: rgb(248, 247, 247);
+  font-style: italic;
+}
+footer > a {
+  color: #e29e18;
+}
+
+
+/********************Pagina-2************************/
+.texto2 {
+  margin: auto;
+  color: rgb(219, 166, 19);
+  font-size: auto;
+  font-family: "Oleo Script", cursive;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(219, 166, 19);
+  border-radius: 15px;
+}
+.imgju {
+  margin: auto;
+  display: flex;
+  width: 300px;
+  border-radius: 50px;
+  padding-bottom: 20px;
+}
+
+
+
+
+/**************Css do formulario*****************/
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.h1-form {
+  font-size: 3rem;
+  color: #e29e18;
+  margin-bottom: 2rem;
+  text-align: left;
+  line-height: 1.2;
+  padding-left: 5px;
+  padding-top: 30px;
+  text-shadow: 1px 1px white;
+}
+
+.h1::before {
+  padding-top: 30px;
+  content: "📧";
+  display: flex;
+  justify-content: left;
+  padding-left: 5px;
+}
+
+.form {
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: rgb(9, 9, 9);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: rgb(108, 23, 139);
+  box-shadow: 0 0 0 3px #e29e18;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: #e29e18;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus { display: flex;
+    flex-direction: column;
+    align-items: center;
+  outline: none;
+  background: gold;
+}
+.h1-form {
+  text-align: center;
+  content: "📧";
+}
+@media (max-width: 320px) {
+  .blocoPrincipal {
+    width: 100vw;
+  }
+  .imagens1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    width: 320px;
+  }
+  .imagens2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    width: 320px;
+  }
+  .carrossel{
+    width: 320px;
+  }
+
+}
