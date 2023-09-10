@@ -148,23 +148,23 @@
         <section id="dados-06">
             <div class="container">
                 <div class="interacao input">
-                    <div class="interacao_dias__alugado" >
-                        <div class="interacao_dias__alugado___div" >
+                    <div class="interacao_dias__alugado">
+                        <div class="interacao_dias__alugado___div">
                             <p class="elementoP">LOC </p>
-                            <p >LOCATION <span id="interacao_material"> </span> <span id="interacao_typo"> </span> <span
+                            <p>LOCATION <span id="interacao_material"> </span> <span id="interacao_typo"> </span> <span
                                     id="interacao_serie"></span></p>
                         </div>
                         <div class="interacao_dias__alugado___div2">
                             <input type="number" id="interacao_quantidades__dias"
                                 placeholder="dia 1.000"><span>1.00000</span>
-                            <input type="text" id="interacao_preco" placeholder="prix 000,0000">
+                            <input type="text" id="interacao_preco" placeholder="prix 000,000">
                             <p id="valor_total"></p>
                             <span>16 %</span>
                         </div>
                     </div>
                 </div>
                 <div class="interacao input">
-                    <div class="interacao_dias__alugado">
+                    <div class="interacao_dias__alugado" id="PM012">
                         <div class="interacao_dias__alugado___div">
                             <p class="elementoPM012">PM012 </p>
                             <p>FRAIS ANNEXE PARTICIP. BRIS DE MACHINE</p>
@@ -179,10 +179,102 @@
                     </div>
                 </div>
                 <div class="interacao textSeguro">
-                    <p> <strong>Une Franchise de 1.500,00  €uros , à la charge du locataire, est applicable en cas de bris de machine accidentelle</strong></p>
+                    <p> <strong>Une Franchise de 1.500,00 €uros , à la charge du locataire, est applicable en cas de
+                            bris de machine accidentelle</strong></p>
+                </div>
+                <div class="interacao input" id="ACCLOC">
+                    <div class="interacao_dias__alugado">
+                        <div class="interacao_dias__alugado___div">
+                            <p class="elementoACCLOC">ACCLOC </p>
+                            <p>ACCOMPTE SUR LOCATION</p>
+                        </div>
+                        <div class="interacao_dias__alugado___div2">
+                            <span class="elementoSpan1">-1.00000</span><span>1.00000</span>
+                            <input type="text" id="interacao_preco__caution" placeholder="prix 000,000">
+                            <p id="valor_total__caution"></p>
+                            <span>16 %</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="interacao input" id="LOCZ">
+                    <div class="interacao_dias__alugado">
+                        <div class="interacao_dias__alugado___div">
+                            <p class="elementoLOCZ">LOCZ2 </p>
+                            <p>TRANSPORTE ZONE 2</p>
+                        </div>
+                        <div div class="interacao_dias__alugado___div2">
+                            <input type="number" id="interacao_quantidades__dias__transporte"
+                                placeholder="ida e volta"><span>1.00000</span>
+                            <input type="text" id="interacao_preco__transporte" placeholder="prix 000,000">
+                            <p id="valor_total__transporte"></p>
+                            <span>16 %</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="interacao input" id="PM014">
+                    <div class="interacao_dias__alugado">
+                        <div class="interacao_dias__alugado___div">
+                            <p class="elementoPM014">PM014 </p>
+                            <p>NETTOYAGE MACHINE</p>
+                        </div>
+                        <div class="interacao_dias__alugado___div2">
+                            <span class="elementoSpan1">1.00000 </span><span>1.00000</span>
+                            <input type="text" id="interacao_preco__limpesa" placeholder="prix 000,000">
+                            <p id="valor_total__limpesa"></p>
+                            <span>16 %</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="interacao input" id="PM0133">
+                    <div class="interacao_dias__alugado">
+                        <div class="interacao_dias__alugado___div">
+                            <p class="elementoPM0133">PM0133 </p>
+                            <p>REMPLISAGEN DE DIESEL</p>
+                        </div>
+                        <div div class="interacao_dias__alugado___div2">
+                            <input type="number" id="ĺitrosPm0133" placeholder="litros"><span>1.00000</span>
+                            <input type="text" id="precoPm0133" placeholder="prix 000,000">
+                            <p id="resultadoPm0133"></p>
+                            <span>16 %</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <hr>
+        <section id="dados-07">
+            <div class="container">
+                <div class="precoTVA_dados">
+                    <div class="precoTVA_dados__tva">
+                        <p><strong>Rècapitulatif :</strong></p>
+                        <p>Montant Imposable</p>
+                        <p>Code T.V.A.</p>
+                        <p>Montant T.V.A.</p>
+                    </div>
+                    <div class="precoTVA_dados__tva2">
+                        <p>Total Hors T.V.A.</p>
+                        <p id="valorTotalSemTVA">000000</p>
+                    </div>
+                </div>
+                <div class="precoTVA_dados_baixo">
+                    <div class="precoTVA_dados__tvaValor">
+                        <p id="paragrafo-1">000,000</p>
+                        <p id="paragrafo-2">16 %</p>
+                        <p id="paragrafo-3">000,00</p>
+                    </div>
+                    <div class="precoTVA_dados__tvaValor2">
+                        <p id="paragrafo-4">Total T.V.A.</p>
+                        <p id="paragrafo-5">000000</p>
+                        <p id="paragrafo-6">16 %</p>
+                    </div>
+                </div>
+            </div>
+            <div id="borda">
+                <div id="bordaEsquerda"></div>
+                <div id="bordaDireta"></div>
+            </div>
+        </section>
+        
         <button type="submit" id="btn">Enviar</button>
     </form>
 

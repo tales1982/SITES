@@ -1,5 +1,5 @@
 $fontPrincipal: sans-serif;
-
+$corVerde:rgb(2, 94, 2);
 *{
     padding: 0;
     margin: 0;
@@ -13,7 +13,7 @@ $fontPrincipal: sans-serif;
 }
 
 p{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .container{
@@ -36,7 +36,7 @@ p{
  &_texto{
        display: flex;
        flex-direction: row;
-       font-size: 11px;
+       font-size: 10px;
        padding-left: 75px;
     }
 }
@@ -68,7 +68,7 @@ padding-top: 20px;
 .detalhes{
     display: flex;
     justify-content: space-around;
-    font-size: 14px;
+    font-size: 12px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 
@@ -79,7 +79,7 @@ padding-top: 20px;
     display: flex;
     flex-direction: row;
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 12px;
 
     &__p1{
         display: flex;
@@ -134,7 +134,7 @@ select {
 }
 
 .datas{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 
     &_inicio, &_fim{
@@ -156,26 +156,26 @@ select {
     display: flex;
     flex-direction: column;
 font-weight: bold;
-color:rgb(2, 94, 2);
+color:$corVerde;
     #periodo{
         width: 45px;
     }
     #dias{
-        color:rgb(2, 94, 2);
+        color:$corVerde;
         font-weight: bold;
     }
     input{
         padding-left: 15px;
         width: 300px;
         font-weight: bold;
-        color:rgb(2, 94, 2);
+        color:$corVerde;
     }
     
 }
 
 .element-com-seta::after {
     content: "→"; /* Define o conteúdo da pseudo-classe como uma seta */
-    color:rgb(2, 94, 2); /* Define a cor da seta */
+    color:$corVerde; /* Define a cor da seta */
     font-size: 18px; /* Define o tamanho da fonte da seta */
     margin-left: 5px; /* Define a margem à esquerda para separar a seta do texto */
 }
@@ -204,12 +204,25 @@ color:rgb(2, 94, 2);
         align-items: center;
         width: 60%;
         .elementoP{
-            padding-right: 35px;
+            padding-right: 55px;
         }
         .elementoPM012{
-            padding-right: 20px;
+            padding-right: 42px;
+        }
+        .elementoACCLOC{
+            padding-right: 30px;
+        }
+        .elementoLOCZ{
+            padding-right: 40px;
+        }
+        .elementoPM014{
+            padding-right: 42PX;
+        }
+        .elementoPM0133{
+            padding-right: 36PX;
         }
         
+       
         
     }
     
@@ -221,6 +234,10 @@ color:rgb(2, 94, 2);
         justify-content: space-between;
         width: 40%;
         
+
+        .elementoSpan1{
+            margin-right: 22px;
+        }
     }
     
     
@@ -234,3 +251,94 @@ color:rgb(2, 94, 2);
 #dados-06 * {
     font-size: inherit;
 }
+
+#dados-07{
+    .container{
+        padding-bottom: 4px;
+        
+    }
+    .precoTVA_dados{
+        display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.precoTVA_dados__tva{
+        display: flex;
+        flex-direction: row;
+        padding-right: 150px;
+        width: 68%;
+        
+}
+
+    .precoTVA_dados__tva2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30%;
+        padding-right: 50px;
+        
+}
+
+.precoTVA_dados_baixo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .precoTVA_dados__tvaValor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 68%;
+        #paragrafo-1{
+          margin-left: 146px;
+        }
+        #paragrafo-2{
+            margin-right: 2px;
+        }
+        #paragrafo-3{
+            margin-right: 110px;
+          }
+    }
+
+    .precoTVA_dados__tvaValor2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30%;
+        #paragrafo-4{
+            margin-left: 0px;
+          }
+          #paragrafo-5{
+              margin-left: 143px;
+          }
+          #paragrafo-6{
+              margin-right: 0px;
+        }
+    }
+}
+
+#borda{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    #bordaDireta{
+        border-top: 1px solid #c0bcbc;
+        width: 32%;
+      
+    }
+
+    #bordaEsquerda{
+        width: 68%;
+        
+        
+    }
+
+   
+}
+
+
+}
+
+
