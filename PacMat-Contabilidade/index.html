@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/css/main.css"defer>
+    <link rel="stylesheet" href="/dist/css/main.css" defer>
     <script src="./dist/scripts/main.js" defer></script>
     <title>Contabilidade Parc Material</title>
 </head>
@@ -26,131 +26,166 @@
             </div>
         </div>
     </head>
-    <section id="dados-01">
-        <div class="container">
-            <div class="dados">
-                <div class="dados_clientes">
-                    <div class="input">
-                        <label for="numeroCT"><strong>Contrat de location n° :</strong></label>
-                        <input type="text" id="numeroCT">
+    <form>
+        <section id="dados-01">
+            <div class="container">
+                <div class="dados">
+                    <div class="dados_clientes">
+                        <div class="input">
+                            <label for="numeroCT"><strong>Contrat de location n° :</strong></label>
+                            <input type="text" id="numeroCT">
+                        </div>
+                        <div class="input">
+                            <label for="data"><strong>Date :</strong></label>
+                            <input type="text" id="data">
+                        </div>
                     </div>
                     <div class="input">
-                        <label for="data"><strong>Date :</strong></label>
-                        <input type="text" id="data">
+                        <label for="client">Client :</label><input id="client" type="text">
                     </div>
+                    <p>Etabli par: Location</p>
                 </div>
-                <div class="input">
-                    <label for="client">Client :</label><input id="client" type="text">
-                </div>
-                <p>Etabli par: Location</p>
             </div>
-        </div>
-    </section>
-    <section id="dados-02">
-        <div class="container">
-            <div class="detalhes">
-                <p class="detalhes_p__1">Code article</p>
-                <p class="detalhes_p__2">Designation</p>
-                <p class="detalhes_p__3">Quantité</p>
-                <p class="detalhes_p__4"> Unité</p>
-                <p class="detalhes_p__5"> Prix Unitaire</p>
-                <p class="detalhes_p__6">Total Code tva</p>
-            </div>
-        </div>
-
-    </section>
-    <section id="dados-03">
-        <div class="container">
-            <div class="dados_maquinas">
-                <div class="dados_maquinas__p1">
-                    <div class="input">
-                        <label for="material">Martériel :</label>
-                        <select id="material">
-                            <option value="pelle">Mini-Pelle</option>
-                            <option value=".....">....</option>
-                            <option value="....."> </option>
-                        </select>
-                    </div>
-                    <div class="input"><label for="modelo">Type :</label><input id="modelo" type="text"></div>
-                    <div class="input"><label for="equip">Equipement :</label><select id="equip">
-                            <option value="equipement">3 Godets</option>
-                            <option value=".....">.....</option>
-                            <option value="....."> </option>
-                        </select></div>
+        </section>
+        <section id="dados-02">
+            <div class="container">
+                <div class="detalhes">
+                    <p class="detalhes_p__1">Code article</p>
+                    <p class="detalhes_p__2">Designation</p>
+                    <p class="detalhes_p__3">Quantité</p>
+                    <p class="detalhes_p__4"> Unité</p>
+                    <p class="detalhes_p__5"> Prix Unitaire</p>
+                    <p class="detalhes_p__6">Total Code tva</p>
                 </div>
-                <div class="dados_maquinas__p2">
-                    <div class="input">
-                        <label for="marque">Marque:</label><select id="marque">
-                            <option value="marca">YANMAR</option>
-                            <option value="husqvarna">HUSQVARNA</option>
-                            <option value="belle">BELLE</option>
-                        </select>
-                    </div>
-                    <div class="input"><label for="serie">N° de Série :</label><input id="serie" type="text"></div>
-                    <div class="input"><label for="option">Option :</label><input id="option" type="text"></div>
-                </div>
-
             </div>
 
-        </div>
-    </section>
-    <section id="dados-04">
-        <div class="container">
-            <div class="datas">
-                <div class="datas_inicio">
-                    <div class="input">
-                        <label for="inicio">Début location : <input type="text" id="inicio"><span>à</span><input
-                                type="text" id="inicioHora">heures</label>
+        </section>
+        <section id="dados-03">
+            <div class="container">
+                <div class="dados_maquinas">
+                    <div class="dados_maquinas__p1">
+                        <div class="input">
+                            <label for="material">Martériel :</label>
+                            <select id="material">
+                                <option value="Mini-Pelle">Mini-Pelle </option>
+                                <option value=".....">.... </option>
+                                <option value="....."> </option>
+                            </select>
+                        </div>
+                        <div class="input"><label for="modelo">Type :</label><input id="modelo" type="text"
+                                placeholder="VIO00...0000"></div>
+                        <div class="input"><label for="equip">Equipement :</label><select id="equip">
+                                <option value="equipement">3 Godets</option>
+                                <option value=".....">.....</option>
+                                <option value="....."> </option>
+                            </select></div>
                     </div>
-                    <div class="input">
-                        <label for="horasDaMaquina">Compteur d'heures à l'enlèvement : <input type="text" id="horasDaMaquina">
-                            heures</label>
+                    <div class="dados_maquinas__p2">
+                        <div class="input">
+                            <label for="marque">Marque:</label><select id="marque">
+                                <option value="marca">YANMAR</option>
+                                <option value="husqvarna">HUSQVARNA</option>
+                                <option value="belle">BELLE</option>
+                            </select>
+                        </div>
+                        <div class="input"><label for="serie">N° de Série :</label><input id="serie" type="text"
+                                placeholder="0000"></div>
+                        <div class="input"><label for="option">Option :</label><input id="option" type="text"></div>
                     </div>
-                </div>
-                <div class="datas_fim">
-                    <div class="input">
-                        <label for="fimLoc">Fin de location : <input type="text" id="fimLoc"><span>à</span><input
-                                type="text" id="retornoHora">heures</label>
-                    </div>
-                    <div class="input">
-                        <label for="horasDaMaquinaRetorno">Compteur d'heures au retour : <input type="text" id="horasDaMaquinaRetorno">
-                            heures</label>
-                    </div>
+
                 </div>
 
             </div>
-        </div>
-    </section>
-    <section id="dados-05">
-        <div class="container">
-            <div class="contatos input">
-                <label for="periodo">Période de location <span class="element-com-seta"></span><input type="number"
-                        id="periodo"><select id="dias">
-                        <option value="dia">jour</option>
-                        <option value=".....">jours</option>
-                        <option value="....."></option>
-                    </select> </label>
-                <label for="contato">Contact client <span class="element-com-seta"></span><input type="text"
-                        id="contato"></label>
-                <label for="chantier">Chantier <span class="element-com-seta"></span><input type="text"
-                        id="chantier"></label>
-            </div>
-        </div>
-    </section>
-    <section id="dados-06">
-        <div class="container">
-            <div class="interacao input">
-                    <div class="interacao_elemento__1"><span id="detalhes_elemento__1">modelo e dias</span></div>
-                    <div class="interacao_elemento__2"><span id="detalhes_elemento__2">seguro</span></div>
-                    <div class="interacao_elemento__3"><span id="detalhes_elemento__3">franchise</span></div>
-                    <div class="interacao_elemento__4"><span id="detalhes_elemento__4"></span>BRH</div>
-                    <div class="interacao_elemento__5"><span id="detalhes_elemento__5"></span>limpeza</div>
-                    <div class="interacao_elemento__5"><span id="detalhes_elemento__6"></span>disel</div>
-                    <div class="interacao_elemento__5"><span id="detalhes_elemento__7"></span>accloc</div>
-            </div>
-        </div>
+        </section>
+        <section id="dados-04">
+            <div class="container">
+                <div class="datas">
+                    <div class="datas_inicio">
+                        <div class="input">
+                            <label for="inicio">Début location : <input type="text" id="inicio"
+                                    placeholder="00/00/00"><span>à</span><input type="text" id="inicioHora"
+                                    placeholder="00 : 00">heures
+                            </label>
+                        </div>
+                        <div class="input">
+                            <label for="horasDaMaquina">Compteur d'heures à l'enlèvement : <input type="text"
+                                    id="horasDaMaquina" placeholder="0000">
+                                heures</label>
+                        </div>
+                    </div>
+                    <div class="datas_fim">
+                        <div class="input">
+                            <label for="fimLoc">Fin de location : <input type="text" id="fimLoc"
+                                    placeholder="00/00/00"><span>à</span><input type="text" id="retornoHora"
+                                    placeholder="00 : 00">heures</label>
+                        </div>
+                        <div class="input">
+                            <label for="horasDaMaquinaRetorno">Compteur d'heures au retour : <input type="text"
+                                    id="horasDaMaquinaRetorno" placeholder="0000">
+                                heures</label>
+                        </div>
+                    </div>
 
-    </section>
+                </div>
+            </div>
+        </section>
+        <section id="dados-05">
+            <div class="container">
+                <div class="contatos input">
+                    <label for="periodo">Période de location <span class="element-com-seta"></span><input type="number"
+                            id="periodo" placeholder="0"><select id="dias">
+                            <option value="jour">jour</option>
+                            <option value="jours">jours</option>
+                            <option value="....."></option>
+                        </select> </label>
+                    <label for="contato">Contact client <span class="element-com-seta"></span><input type="text"
+                            id="contato"></label>
+                    <label for="chantier">Chantier <span class="element-com-seta"></span><input type="text"
+                            id="chantier"></label>
+                </div>
+            </div>
+        </section>
+        <section id="dados-06">
+            <div class="container">
+                <div class="interacao input">
+                    <div class="interacao_dias__alugado" >
+                        <div class="interacao_dias__alugado___div" >
+                            <p class="elementoP">LOC </p>
+                            <p >LOCATION <span id="interacao_material"> </span> <span id="interacao_typo"> </span> <span
+                                    id="interacao_serie"></span></p>
+                        </div>
+                        <div class="interacao_dias__alugado___div2">
+                            <input type="number" id="interacao_quantidades__dias"
+                                placeholder="dia 1.000"><span>1.00000</span>
+                            <input type="text" id="interacao_preco" placeholder="prix 000,0000">
+                            <p id="valor_total"></p>
+                            <span>16 %</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="interacao input">
+                    <div class="interacao_dias__alugado">
+                        <div class="interacao_dias__alugado___div">
+                            <p class="elementoPM012">PM012 </p>
+                            <p>FRAIS ANNEXE PARTICIP. BRIS DE MACHINE</p>
+                        </div>
+                        <div class="interacao_dias__alugado___div2">
+                            <input type="number" id="interacao_quantidades__dias__seguro"
+                                placeholder="dia 1.000"><span>1.00000</span>
+                            <input type="text" id="interacao_preco__seguro" placeholder="prix 000,000">
+                            <p id="valor_total__seguro"></p>
+                            <span>16 %</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="interacao textSeguro">
+                    <p> <strong>Une Franchise de 1.500,00  €uros , à la charge du locataire, est applicable en cas de bris de machine accidentelle</strong></p>
+                </div>
+            </div>
+        </section>
+        <button type="submit" id="btn">Enviar</button>
+    </form>
+
 </body>
 
 </html>

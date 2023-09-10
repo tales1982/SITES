@@ -8,6 +8,10 @@ $fontPrincipal: sans-serif;
 
 }
 
+::placeholder {
+    color: red;
+}
+
 p{
     font-size: 13px;
 }
@@ -174,27 +178,59 @@ color:rgb(2, 94, 2);
     color:rgb(2, 94, 2); /* Define a cor da seta */
     font-size: 18px; /* Define o tamanho da fonte da seta */
     margin-left: 5px; /* Define a margem à esquerda para separar a seta do texto */
-  }
+}
 
 .interacao{
     display: flex;
     flex-direction: column;
-font-size: 12px;
+    font-size: 10px;
+    margin: 5px 0;
+    
 
-    &_elemento__1{
+    input{
+        font-size: 12px;
+        width: 66px;
+    }
 
-    }
-    &_elemento__2{
-    
-    }
-    &_elemento__3{
+    &_dias__alugado{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+
+    &___div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 60%;
+        .elementoP{
+            padding-right: 35px;
+        }
+        .elementoPM012{
+            padding-right: 20px;
+        }
+        
+        
     }
-    &_elemento__4{
+    
+
+    &___div2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        
+    }
+    
     
     }
-    &_elemento__5{
     
-    }
-    
+}
+
+#dados-06 {
+    font-size: 10px; /* Tamanho de fonte desejado, por exemplo, 16 pixels */
+}
+#dados-06 * {
+    font-size: inherit;
 }
