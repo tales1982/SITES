@@ -17,14 +17,22 @@ const transporte = document.querySelector('#LOCZ');//capturando a div de transpo
 const transporteIdaVolta = document.querySelector('#interacao_quantidades__dias__transporte');// capturando valor do input ida e volta
 const inputValorTransport = document.querySelector('#interacao_preco__transporte');//capiturando o input do preco do transporte
 const resultadoTransporte = document.querySelector('#valor_total__transporte')//Onde o resultado do transporte vai
+const PM014 = document.querySelector('#PM014');//div da limpeza
 const inputLinpeza = document.querySelector('#interacao_preco__limpesa');//inpute do valor da limpeza.
+const valorLimpezaRsultado = document.querySelector('#valor_total__limpesa');//resultado 
 const PM0133 = document.querySelector('#PM0133');//div do diesel
 const inputLitrosDisel = document.querySelector('#ĺitrosPm0133');//Litros de disel usando
 const inputPrecoDiesel = document.querySelector('#precoPm0133');//valor do diesel
 const paragrofoResultadoDisel = document.querySelector('#resultadoPm0133');//onde vai o resultado 
+const precoFinalCliente = document.querySelector('#preco_final');//preco final
+const totalHorsTVA = document.querySelector('#paragrafo-6');
+const montantImposable = document.querySelector('#paragrafo-7');
+const montantTVA = document.querySelector('#paragrafo-9');
+const totalTVA = document.querySelector('#paragrafo-11');
+const prix_TOTAL = document.querySelector('#preco_final');
 
-
-botaoEnviar.addEventListener('click', function(ev) {
+/*====================================================== */
+botaoEnviar.addEventListener('click', function (ev) {
     ev.preventDefault();
 
     // enjetando o materia no span
@@ -43,8 +51,10 @@ botaoEnviar.addEventListener('click', function(ev) {
     cautionValor();
     transporteLoC();
     limpeza();
-    diesel()
+    diesel();
+    calcularTVA()
 
+   
 });
 function calcularDias() {
     const precoMaquinaNum = parseFloat(precoPorDia.value);
@@ -61,51 +71,70 @@ function calculaSeguro() {
     resultadoValorSeguro.textContent = procentagenSeguro.toFixed(2)
     return procentagenSeguro;
 }
-function cautionValor(){
+function cautionValor() {
     const valorCaution = parseFloat(caution.value);
-    if(valorCaution == 0){
+    if (valorCaution == 0) {
         ACCLOC.style.display = 'none';
-    }else{
+        return valorCaution;
+    } else {
         const cautionResultado = document.querySelector('#valor_total__caution');
-        cautionResultado.textContent = `-${valorCaution},00`;
+        cautionResultado.textContent = `-${valorCaution.toFixed(2)}`;
     }
 
     return valorCaution;
 }
-function transporteLoC(){
+function transporteLoC() {
     const transporte = parseFloat(transporteIdaVolta.value);
-    if(transporte == 0){
+    if (transporte == 0) {
         LOCZ.style.display = 'none';
-    }else{       
-        const transporteIdaVoltaNum = parseFloat(transporteIdaVolta.value)
-        const precoTransporte = parseFloat(inputValorTransport.value)
-        const totalDoTransporte = precoTransporte * transporteIdaVoltaNum
-        resultadoTransporte.textContent = `${totalDoTransporte},00`
+        return transporte
+    } else {
+        const transporteIdaVoltaNum = parseFloat(transporteIdaVolta.value);
+        const precoTransporte = parseFloat(inputValorTransport.value);
+        const totalDoTransporte = precoTransporte * transporteIdaVoltaNum;
+        resultadoTransporte.textContent = `${totalDoTransporte.toFixed(2)}`;
         return totalDoTransporte
     }
-   
+
 }
-function limpeza(){
+function limpeza() {
     const valorLimpeza = parseFloat(inputLinpeza.value);
-    if(valorLimpeza == 0){
+    if (valorLimpeza == 0) {
         PM014.style.display = 'none';
-    }else{
-        const valorLimpezaRsultado = document.querySelector('#valor_total__limpesa');
-        valorLimpezaRsultado.textContent = `${valorLimpeza},00`;
+        return valorLimpeza;
+    } else {
+        valorLimpezaRsultado.textContent = `${valorLimpeza}`;
+        return valorLimpeza;
     }
 
-    return valorLimpeza;
+
 }
-function diesel(){
+function diesel() {
     const litrosDiesel = parseFloat(inputLitrosDisel.value);
-    
-    if(litrosDiesel == 0){
+    const precoDoDiesel = parseFloat(inputPrecoDiesel.value);
+    if (litrosDiesel == 0) {
         PM0133.style.display = 'none';
-    }else{
-        const precoDoDiesel = parseFloat(inputPrecoDiesel.value);
+        return litrosDiesel;
+    } else {
         const totaPagarDiesel = precoDoDiesel * litrosDiesel;
-        paragrofoResultadoDisel.textContent = `${totaPagarDiesel}00`
+        paragrofoResultadoDisel.textContent = `${totaPagarDiesel.toFixed(2)}`
         return totaPagarDiesel;
+    }
 }
-}
-    
+ function calcularTVA(){
+        const diaTVA = calcularDias();
+        const seguroTVA = calculaSeguro();
+        const cautionTVA = cautionValor();
+        const transportTVA = transporteLoC();
+        const limpezaTVA = limpeza();
+        const dieselTVA = diesel();
+        const soma = (diaTVA + seguroTVA + transportTVA + limpezaTVA + dieselTVA) - cautionTVA
+        montantImposable.textContent = soma.toFixed(2);
+        const tva = soma  * 0.16;
+        montantTVA.textContent = tva.toFixed(2); 
+        totalHorsTVA.textContent = soma.toFixed(2);
+        totalTVA.textContent = tva.toFixed(2); 
+        const TOTAL = tva + soma;
+        prix_TOTAL.textContent = TOTAL.toFixed(2)  
+           
+    }

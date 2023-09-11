@@ -67,9 +67,13 @@
                         <div class="input">
                             <label for="material">Martériel :</label>
                             <select id="material">
-                                <option value="Mini-Pelle">Mini-Pelle </option>
-                                <option value=".....">.... </option>
-                                <option value="....."> </option>
+                                <option value="Mini-Pelle">MINI-PELLE </option>
+                                <option value="CHARGEUR COMPACT">CHARGEUR COMPACT </option>
+                                <option value="DUMPER COMPACT">DUMPER COMPACT</option>
+                                <option value="PLAQUE VIBRANTE">PLAQUE VIBRANTE </option>
+                                <option value="VIBREUR BETON">VIBREUR BETON </option>
+                                <option value="PILLONNEUSE">PILLONNEUSE</option>
+                                <option value="GROUPE ELETROGENE">GROUPE ELETROGENE</option>
                             </select>
                         </div>
                         <div class="input"><label for="modelo">Type :</label><input id="modelo" type="text"
@@ -84,8 +88,10 @@
                         <div class="input">
                             <label for="marque">Marque:</label><select id="marque">
                                 <option value="marca">YANMAR</option>
-                                <option value="husqvarna">HUSQVARNA</option>
-                                <option value="belle">BELLE</option>
+                                <option value="HUSQVARNA">HUSQVARNA</option>
+                                <option value="BELLE">BELLE</option>
+                                <option value="TEREX">TEREX</option>
+                                <option value="SANY">SANY</option>
                             </select>
                         </div>
                         <div class="input"><label for="serie">N° de Série :</label><input id="serie" type="text"
@@ -218,7 +224,7 @@
                             <p>NETTOYAGE MACHINE</p>
                         </div>
                         <div class="interacao_dias__alugado___div2">
-                            <span class="elementoSpan1">1.00000 </span><span>1.00000</span>
+                            <span class="elementoSpan1">100000 </span><span> 1.00000</span>
                             <input type="text" id="interacao_preco__limpesa" placeholder="prix 000,000">
                             <p id="valor_total__limpesa"></p>
                             <span>16 %</span>
@@ -241,40 +247,53 @@
                 </div>
             </div>
         </section>
-        <hr>
         <section id="dados-07">
             <div class="container">
                 <div class="precoTVA_dados">
                     <div class="precoTVA_dados__tva">
-                        <p><strong>Rècapitulatif :</strong></p>
-                        <p>Montant Imposable</p>
-                        <p>Code T.V.A.</p>
-                        <p>Montant T.V.A.</p>
+                        <p id="paragrafo-1">Rècapitulatif :</p>
+                        <p id="paragrafo-2">Montant Imposable</p>
+                        <p id="paragrafo-3">Code T.V.A.</p>
+                        <p id="paragrafo-4">Montant T.V.A.</p>
                     </div>
                     <div class="precoTVA_dados__tva2">
-                        <p>Total Hors T.V.A.</p>
-                        <p id="valorTotalSemTVA">000000</p>
+                        <p id="paragrafo-5">Total Hors T.V.A.</p>
+                        <p id="paragrafo-6"></p>
+                    </div>
+                    <div class="precoTVA_dados__tvaValor3">
+                        <p id="paragrafo-12"></p>
                     </div>
                 </div>
                 <div class="precoTVA_dados_baixo">
                     <div class="precoTVA_dados__tvaValor">
-                        <p id="paragrafo-1">000,000</p>
-                        <p id="paragrafo-2">16 %</p>
-                        <p id="paragrafo-3">000,00</p>
+                        <p id="paragrafo-7"></p>
+                        <p id="paragrafo-8">16%</p>
+                        <p id="paragrafo-9"></p>
                     </div>
                     <div class="precoTVA_dados__tvaValor2">
-                        <p id="paragrafo-4">Total T.V.A.</p>
-                        <p id="paragrafo-5">000000</p>
-                        <p id="paragrafo-6">16 %</p>
+                        <p id="paragrafo-10">Total T.V.A.</p>
+                        <p id="paragrafo-11"></p>
+                    </div>
+                    <div class="precoTVA_dados__tvaValor3">
+                        <p id="paragrafo-12">16 %</p>
                     </div>
                 </div>
-            </div>
-            <div id="borda">
-                <div id="bordaEsquerda"></div>
-                <div id="bordaDireta"></div>
+                <div class="precoTVA_dados__precos">
+                    <div class="precoTVA_dados__text">
+                        <p></p>
+                    </div>
+                    <div class="precoTVA_dados__total">
+                        <p>Total T.T.C </p>
+                        <p id="preco_final">000000</p>
+                    </div>
+                    <div class="precoTVA_dados__total2">
+                        
+                    </div>
+
+                </div>
             </div>
         </section>
-        
+
         <button type="submit" id="btn">Enviar</button>
     </form>
 

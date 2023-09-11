@@ -5,7 +5,7 @@ $corVerde:rgb(2, 94, 2);
     margin: 0;
     box-sizing: border-box;
     font-family: $fontPrincipal;
-
+    
 }
 
 ::placeholder {
@@ -25,6 +25,7 @@ p{
 
 }
 
+
 .cabecario{
     padding-top: 50px;
     font-weight: bold;
@@ -41,11 +42,33 @@ p{
     }
 }
 
-.dados{
+.input input,select{
+    text-align: center;
+    border: none;
+    width: 90px;
+    &:hover{
+        background-color: #ccc;
+    }
+}
+
+select {
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit, como o Chrome e o Safari */
+    -moz-appearance: none; /* Para navegadores baseados em Gecko, como o Firefox */
+    appearance: none; /* Para navegadores modernos */
+    background-color: transparent;
+    &:hover {
+    cursor: pointer; /* Altere o cursor quando passar o mouse sobre o select */
+    }
+}
+
+#dados-01{
+
+   .dados{
 
     .input input{
        border: none;
         width: 70px;
+        text-align: left;
     }
 
    #client{
@@ -53,17 +76,16 @@ p{
     margin: 5px 0px 5px 20px;
    }
 
-
 padding-top: 20px;
     &_clientes{
         display: flex;
         justify-content: space-between;
         width: 80vw;
     }
-
-
-
+} 
 }
+
+#dados-02{
 
 .detalhes{
     display: flex;
@@ -71,15 +93,20 @@ padding-top: 20px;
     font-size: 12px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-
-  
 }
 
+}
+
+#dados-03{
 .dados_maquinas{
     display: flex;
     flex-direction: row;
     padding-top: 5px;
     font-size: 12px;
+
+    #material{
+        width: 160px;
+    }
 
     &__p1{
         display: flex;
@@ -114,26 +141,10 @@ padding-top: 20px;
     }
 
 }
-
-.input input,select{
-    border: none;
-    width: 90px;
-    &:hover{
-        background-color: #ccc;
-    }
 }
 
-select {
-    -webkit-appearance: none; /* Para navegadores baseados em WebKit, como o Chrome e o Safari */
-    -moz-appearance: none; /* Para navegadores baseados em Gecko, como o Firefox */
-    appearance: none; /* Para navegadores modernos */
-    background-color: transparent;
-    &:hover {
-    cursor: pointer; /* Altere o cursor quando passar o mouse sobre o select */
-    }
-}
-
-.datas{
+#dados-04{
+ .datas{
     font-size: 12px;
     font-weight: bold;
 
@@ -150,28 +161,30 @@ select {
 
 }
 
+}   
 }
 
-.contatos{
-    display: flex;
-    flex-direction: column;
-font-weight: bold;
-color:$corVerde;
-    #periodo{
-        width: 45px;
+#dados-05{
+    .contatos{
+        display: flex;
+        flex-direction: column;
+    font-weight: bold;
+    color:$corVerde;
+        #periodo{
+            width: 45px;
+        }
+        #dias{
+            color:$corVerde;
+            font-weight: bold;
+        }
+        input{
+            padding-left: 15px;
+            width: 300px;
+            font-weight: bold;
+            color:$corVerde;
+        }
+        
     }
-    #dias{
-        color:$corVerde;
-        font-weight: bold;
-    }
-    input{
-        padding-left: 15px;
-        width: 300px;
-        font-weight: bold;
-        color:$corVerde;
-    }
-    
-}
 
 .element-com-seta::after {
     content: "→"; /* Define o conteúdo da pseudo-classe como uma seta */
@@ -180,16 +193,22 @@ color:$corVerde;
     margin-left: 5px; /* Define a margem à esquerda para separar a seta do texto */
 }
 
+}
+
+#dados-06 {
+    font-size: 10px; /* Tamanho de fonte desejado, por exemplo, 16 pixels */
+    &#dados-06 * {
+    font-size: inherit;
+}
 .interacao{
     display: flex;
     flex-direction: column;
     font-size: 10px;
     margin: 5px 0;
-    
 
     input{
         font-size: 12px;
-        width: 66px;
+        width: 70px;
     }
 
     &_dias__alugado{
@@ -245,100 +264,112 @@ color:$corVerde;
     
 }
 
-#dados-06 {
-    font-size: 10px; /* Tamanho de fonte desejado, por exemplo, 16 pixels */
-}
-#dados-06 * {
-    font-size: inherit;
 }
 
 #dados-07{
-    .container{
-        padding-bottom: 4px;
-        
-    }
-    .precoTVA_dados{
-        display: flex;
+.precoTVA_dados{
+    display: flex;
     flex-direction: row;
     width: 100%;
-    
-}
 
-.precoTVA_dados__tva{
-        display: flex;
-        flex-direction: row;
-        padding-right: 150px;
-        width: 68%;
-        
+    .precoTVA_dados__tva{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    border-top: 1px solid #000;
+        #paragrafo-1{
+        margin-right: 15px;
+        font-weight: bold;
+        }
+        #paragrafo-2{
+            margin-right: 22px;
+        }
+        #paragrafo-3{
+            margin-right: 66px;
+        }
 }
-
-    .precoTVA_dados__tva2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 30%;
-        padding-right: 50px;
-        
+.precoTVA_dados__tva2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    border-top: 1px solid #000;
+}
+.precoTVA_dados__tvaValor3{
+    text-align: end;
+width: 5%;
+border-top: 1px solid #000;
+}
 }
 
 .precoTVA_dados_baixo{
     display: flex;
     flex-direction: row;
     width: 100%;
-
     .precoTVA_dados__tvaValor{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 68%;
-        #paragrafo-1{
-          margin-left: 146px;
-        }
-        #paragrafo-2{
-            margin-right: 2px;
-        }
-        #paragrafo-3{
-            margin-right: 110px;
-          }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 5px;
     }
 
     .precoTVA_dados__tvaValor2{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 30%;
-        #paragrafo-4{
-            margin-left: 0px;
-          }
-          #paragrafo-5{
-              margin-left: 143px;
-          }
-          #paragrafo-6{
-              margin-right: 0px;
-        }
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+   
+    width: 25%;
     }
+    
+    .precoTVA_dados__tvaValor3{
+    text-align: end;
+    width: 5%;
+    border-bottom: 1px solid #000;
+    }
+
+    .precoTVA_dados__tvaValor4{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+        .precoTVA_dados__text{
+            display: flex;
+            flex-direction: row;
+            
+            background-color: yellow;
+        }
+        
+    }
+
 }
 
-#borda{
+.precoTVA_dados__precos{
     display: flex;
     flex-direction: row;
     width: 100%;
-    #bordaDireta{
-        border-top: 1px solid #c0bcbc;
-        width: 32%;
-      
+
+    .precoTVA_dados__text{
+        width: 70%;
+       
     }
 
-    #bordaEsquerda{
-        width: 68%;
-        
-        
+    .precoTVA_dados__total{
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+        padding-top: 20px;
+        font-weight: bold;
     }
-
-   
+    .precoTVA_dados__total2{
+        display: flex;
+        justify-content: space-between;
+        width: 5%;
+    }
 }
 
 
+
+
 }
-
-
