@@ -5,24 +5,20 @@ $corVerde:rgb(2, 94, 2);
     margin: 0;
     box-sizing: border-box;
     font-family: $fontPrincipal;
-    
+
 }
 
 ::placeholder {
     color: red;
 }
-
+/*
 p{
     font-size: 12px;
 }
-
+*/
 .container{
-    max-width: 1440px;
+    width: 100vw;
     width: 100%;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-
 }
 
 
@@ -42,15 +38,7 @@ p{
     }
 }
 
-.input input,select{
-    text-align: center;
-    border: none;
-    width: 90px;
-    &:hover{
-        background-color: #ccc;
-    }
-}
-
+//Para apagar a seta da caixa do select
 select {
     -webkit-appearance: none; /* Para navegadores baseados em WebKit, como o Chrome e o Safari */
     -moz-appearance: none; /* Para navegadores baseados em Gecko, como o Firefox */
@@ -62,21 +50,40 @@ select {
 }
 
 #dados-01{
+margin-top: 60px;
 
    .dados{
-
     .input input{
        border: none;
         width: 70px;
         text-align: left;
     }
 
+    .dados_clientes{
+        width: 100%;
+
+        .input input,select{
+            text-align: left;
+            border: none;
+            width: 90px;
+            &:hover{
+                background-color: #ccc;
+            }
+        }
+        
+        .dados-01__div70{
+            width: 70%;
+        }
+        .dados-01__div30{
+            width: 30%;
+        }
+    }
    #client{
     width: 500px;
     margin: 5px 0px 5px 20px;
    }
 
-padding-top: 20px;
+
     &_clientes{
         display: flex;
         justify-content: space-between;
@@ -86,22 +93,43 @@ padding-top: 20px;
 }
 
 #dados-02{
-
 .detalhes{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     font-size: 12px;
+    padding: 2px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-}
+    margin-top: 50px;
+        .detales_div20{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            width: 20%;
+        }
+        .detales_div70{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 60%;
+            margin-left: 150px;
+        }
+        .detales__div20{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end; 
+            width: 20%;
+        }
 
+}
 }
 
 #dados-03{
+    margin-bottom: 20px;
 .dados_maquinas{
     display: flex;
     flex-direction: row;
-    padding-top: 5px;
+    margin-top: 20px;
     font-size: 12px;
 
     #material{
@@ -111,34 +139,31 @@ padding-top: 20px;
     &__p1{
         display: flex;
         flex-direction: column;
+        width: 44%;
+        .material_div50{
+            display: flex;
+            flex-direction:row;
+            width:100%;
 
-        #material{
-            margin-left: 31px;
-        }
-        #modelo{
-            margin-left: 58px;
-        }
-        #equip{
-            margin-left: 14px;
+            select,input{
+                border: none;
+                font-size: 14px;
+            }
+           
+            .paragrafosLabel{
+                width: 65%;
+                
+            }
+            .label{
+                display: flex;
+                flex-direction:column;
+                font-size: 14px;
+                width: 35%;
+                
+            }
         }
     }
 
-    &__p2{
-        display: flex;
-        flex-direction: column;
-        padding-left: 100px;
-
-        #marque{
-            margin-left: 42px;
-        }
-        #serie{
-            margin-left: 14px;
-        }
-        #option{
-            padding-left: 40px;
-            margin-left: 45px;
-        }
-    }
 
 }
 }
