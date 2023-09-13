@@ -325,6 +325,7 @@ margin-top: 60px;
 }
 
 #dados-07{
+    font-size: 12px;
 .precoTVA_dados{
     display: flex;
     flex-direction: row;
@@ -345,6 +346,7 @@ margin-top: 60px;
         #paragrafo-3{
             margin-right: 66px;
         }
+        
 }
 .precoTVA_dados__tva2{
     display: flex;
@@ -367,9 +369,25 @@ border-top: 1px solid #000;
     .precoTVA_dados__tvaValor{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 70%;
     margin-left: 5px;
+    }
+
+    #paragrafo-7, #paragrafo-8, #paragrafo-9, #paragrafo-10, #paragrafo-11, #paragrafo-12 {
+        padding-top: 10px;
+    }
+    
+    #paragrafo-7{
+        margin-left: 150px;
+    }
+
+    #paragrafo-8{
+        margin-left: 60px;
+    }
+
+    #paragrafo-9{
+        margin-left: 100px;
     }
 
     .precoTVA_dados__tvaValor2{
