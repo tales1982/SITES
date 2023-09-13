@@ -336,6 +336,7 @@ margin-top: 60px;
     flex-direction: row;
     width: 70%;
     border-top: 1px solid #000;
+    padding-top: 10px;
         #paragrafo-1{
         margin-right: 15px;
         font-weight: bold;
@@ -354,6 +355,7 @@ margin-top: 60px;
     justify-content: space-between;
     width: 25%;
     border-top: 1px solid #000;
+    padding-top: 10px;
 }
 .precoTVA_dados__tvaValor3{
     text-align: end;
@@ -447,5 +449,17 @@ border-top: 1px solid #000;
 
 
 
+}
 
+#dados-08{
+
+    .intracom100{
+        font-size: 10PX;
+        width: 100%;
+
+        #intracomText{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }
