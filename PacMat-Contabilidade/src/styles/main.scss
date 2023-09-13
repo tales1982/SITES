@@ -11,11 +11,7 @@ $corVerde:rgb(2, 94, 2);
 ::placeholder {
     color: red;
 }
-/*
-p{
-    font-size: 12px;
-}
-*/
+
 .container{
     width: 100vw;
     width: 100%;
@@ -220,11 +216,13 @@ margin-top: 60px;
 }
 
 #dados-05{
+    margin-bottom: 20px;
     .contatos{
         display: flex;
         flex-direction: column;
-    font-weight: bold;
-    color:$corVerde;
+        font-weight: bold;
+        color:$corVerde;
+        
         #periodo{
             width: 45px;
         }
@@ -232,11 +230,18 @@ margin-top: 60px;
             color:$corVerde;
             font-weight: bold;
         }
+        label{
+            margin: 5px 0;
+        }
         input{
             padding-left: 15px;
             width: 300px;
             font-weight: bold;
             color:$corVerde;
+            border: none;
+        }
+        select{
+            border: none;
         }
         
     }
