@@ -18,6 +18,7 @@ const transporteIdaVolta = document.querySelector('#interacao_quantidades__dias_
 const inputValorTransport = document.querySelector('#interacao_preco__transporte');//capiturando o input do preco do transporte
 const resultadoTransporte = document.querySelector('#valor_total__transporte')//Onde o resultado do transporte vai
 const PM014 = document.querySelector('#PM014');//div da limpeza
+const lipezaHoras = document.querySelector('#inputHorasDeLimpesa')//Horas de limpesa
 const inputLinpeza = document.querySelector('#interacao_preco__limpesa');//inpute do valor da limpeza.
 const valorLimpezaRsultado = document.querySelector('#valor_total__limpesa');//resultado 
 const PM0133 = document.querySelector('#PM0133');//div do diesel
@@ -30,6 +31,11 @@ const montantImposable = document.querySelector('#paragrafo-7');
 const montantTVA = document.querySelector('#paragrafo-9');
 const totalTVA = document.querySelector('#paragrafo-11');
 const prix_TOTAL = document.querySelector('#preco_final');
+const divTabe = document.querySelector('#tabe');//DivTabe
+const inputDiasTabe = document.querySelector('#diasTabe');//Input dia BRH
+const inputPrecoTabe = document.querySelector('#precoTabe');//Input do preco do brh
+const valorFinalTabe = document.querySelector('#valorTotalTabe');//Onde vao o resultado do BRH
+
 
 /*====================================================== */
 botaoEnviar.addEventListener('click', function (ev) {
@@ -51,9 +57,8 @@ botaoEnviar.addEventListener('click', function (ev) {
     cautionValor();
     transporteLoC();
     limpeza();
-    diesel();
+    tabe()
     calcularTVA()
-
    
 });
 function calcularDias() {
@@ -78,7 +83,7 @@ function cautionValor() {
         return valorCaution;
     } else {
         const cautionResultado = document.querySelector('#valor_total__caution');
-        cautionResultado.textContent = `-${valorCaution.toFixed(2)}`;
+        cautionResultado.textContent = `-${valorCaution.toFixed(1)}`;
     }
 
     return valorCaution;
@@ -99,11 +104,14 @@ function transporteLoC() {
 }
 function limpeza() {
     const valorLimpeza = parseFloat(inputLinpeza.value);
+    const HorasLimpesa = parseFloat(inputHorasDeLimpesa.value);
+    const ValorFinalLimpeza = valorLimpeza * HorasLimpesa
+
     if (valorLimpeza == 0) {
         PM014.style.display = 'none';
         return valorLimpeza;
     } else {
-        valorLimpezaRsultado.textContent = `${valorLimpeza}`;
+        valorLimpezaRsultado.textContent = `${ValorFinalLimpeza.toFixed(2)}`;
         return valorLimpeza;
     }
 
@@ -121,20 +129,49 @@ function diesel() {
         return totaPagarDiesel;
     }
 }
+function tabe(){
+    const valorInputDia = parseFloat(inputDiasTabe.value);
+    const precoTabe = parseFloat(inputPrecoTabe.value);
+    const valorFinalTabeNum =  precoTabe * valorInputDia;
+
+
+    if (valorInputDia == 0) {
+        divTabe.style.display = 'none';
+        return valorInputDia;
+    } else {
+        valorFinalTabe.textContent = `${valorFinalTabeNum.toFixed(2)}`;
+        
+        return valorFinalTabeNum;
+    }
+}
  function calcularTVA(){
         const diaTVA = calcularDias();
         const seguroTVA = calculaSeguro();
         const cautionTVA = cautionValor();
+        const brhTVA = tabe();
         const transportTVA = transporteLoC();
         const limpezaTVA = limpeza();
         const dieselTVA = diesel();
-        const soma = (diaTVA + seguroTVA + transportTVA + limpezaTVA + dieselTVA) - cautionTVA
+        const soma = (diaTVA + seguroTVA + brhTVA + transportTVA + limpezaTVA + dieselTVA) - cautionTVA
         montantImposable.textContent = soma.toFixed(2);
         const tva = soma  * 0.16;
+
         montantTVA.textContent = tva.toFixed(2); 
         totalHorsTVA.textContent = soma.toFixed(2);
         totalTVA.textContent = tva.toFixed(2); 
         const TOTAL = tva + soma;
         prix_TOTAL.textContent = TOTAL.toFixed(2)  
-           
-    }
+        //console.log(seguroTVA)
+        //console.log(cautionTVA)
+        console.log(brhTVA)
+        //console.log(transportTVA)
+        //console.log(limpezaTVA)
+        //console.log(diaTVA)
+        //console.log(dieselTVA)
+        //console.log(soma)
+        //console.log(montantImposable)
+        //console.log(tva)
+        //console.log(TOTAL)
+        //console.log(prix_TOTAL)
+}
+

@@ -256,6 +256,7 @@ margin-top: 60px;
 }
 
 #dados-06 {
+    margin-bottom: 50px;
     font-size: 10px; /* Tamanho de fonte desejado, por exemplo, 16 pixels */
     &#dados-06 * {
     font-size: inherit;
@@ -269,6 +270,7 @@ margin-top: 60px;
     input{
         font-size: 12px;
         width: 70px;
+        border: none;
     }
 
     &_dias__alugado{
@@ -310,13 +312,9 @@ margin-top: 60px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 40%;
-        
 
-        .elementoSpan1{
-            margin-right: 22px;
-        }
     }
     
     
