@@ -32,3 +32,7 @@ exports.watch
 npm run build watch
 
 
+## instalando o pluguin imagemin para compactar minhas imagens IPMOTTE tem que ser na versao 7.1.0
+npm install --save-dev gulp-imagemin@7.1.0
+
+
