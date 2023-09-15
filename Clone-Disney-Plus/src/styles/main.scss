@@ -2,8 +2,6 @@
 @use 'hero';
 
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +17,7 @@ body{
 
 @mixin text($fontSize: 16px){
 font-size:$fontSize;
-line-height:$fontSize 10px;
+line-height:$fontSize + 10px;
 color: variaveis.$corTextoPrincipal;
 }
 
@@ -42,7 +40,7 @@ color: variaveis.$corTextoPrincipal;
     @include text((12px));
 }
 
-.title--bib{
+.title--big{
     @include title(44px)
 }
 
