@@ -1,7 +1,7 @@
-@use '_variaveis';
+@use 'variaveis';
 @use 'hero';
-@use'_shows';
-
+@use 'shows';
+@use 'plans';
 @font-face {
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
@@ -70,4 +70,18 @@ color: variaveis.$corTextoPrincipal;
     @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline;
+}
+
+
+.button{
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-top: 8px;
 }

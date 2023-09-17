@@ -3,6 +3,7 @@
 
 .shows{
     padding: 2vw 5.6vw;
+    min-height: 50vw;
 
     &__list{
         padding-top: 44px;
@@ -25,17 +26,19 @@
     &__tabs{
         display: flex;
         justify-content: center;
-        &__button{
+
+         &__button{
             color: variaveis.$corTextoSecundario;
             font-size: 20px;
             border: none;
-            
+            cursor: pointer;
             background: none;
             text-transform: uppercase;
             margin: 0 1vw;
+            border-bottom: 5px solid transparent;
 
             &--is-active{
-                border-bottom: 5px solid variaveis.$corTextoSecundario;
+                border-color: variaveis.$corTextoSecundario;
             }
 
         }
