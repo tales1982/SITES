@@ -1,46 +1,40 @@
-.plans{
+.plans {
     padding: 5.6vw;
 
-    h2{
+    h2 {
         text-align: center;
     }
 
-    &__list{
+    &__list {
         display: flex;
         justify-content: space-around;
 
-
-        &__item{
+        &__item {
             text-align: center;
             padding: 60px 44px 44px;
             max-width: 380px;
             width: 100%;
-            
-            //para captura um intem por seletor vou captura o segundo item da minha lista(:nth-child())
-            &:nth-child(2){
+
+            // para capturar um item por seletor vou capturar o segundo item da minha lista(:nth-child())
+            &:nth-child(2) {
                 background-image: url(../images/fundo_combo_plus.png);
                 background-repeat: no-repeat;
                 background-size: contain;
             }
 
+            strong {
+                display: block;
+                margin-top: 24px;
+            }
 
-        strong{
-            display: block;
-            margin-top: 24px;
-        }
-
-        img{
+            img {
                 height: 83px;
             }
         }
         
-        
-        
-
-      
     }
 
-    p{
+    p {
         text-align: center;
     }
 }
