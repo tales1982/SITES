@@ -1,0 +1,75 @@
+.faq{
+    padding: 5.6vw;
+
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__questions{
+
+        &__item{
+            background-color: #13151d;
+            margin-bottom: 16px;
+            position: relative;
+            
+
+
+            &__question{
+                color: #fff;
+                font-size: 20px;
+                padding: 24px;
+                display: block;
+                cursor: pointer;
+
+                //Adcionando o pseudo elemeto pelo css (-) e (+)
+                &::after {
+                content: '+';
+                position: absolute;
+                top: 0;
+                right: 24px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 40px;
+            }
+
+            }
+
+            &__answer{
+               //Escondendo as resposta da div faqu pelo css
+            height: 0;
+            overflow: hidden;
+               //as resporta estao escondidas
+            padding:  0 24px;
+            transition: height, 0 .5s ease;
+
+            p{
+                padding: 3px;
+            }
+
+            &__ul{
+                padding-left: 50px;
+                padding-top: 5px;
+
+                li{
+                    padding: 3px;
+                }
+            }
+            }
+
+            &--is-open{ 
+                //fazendo aparecer minha respostas pelo css.
+                .faq__questions__item__question::after{
+                    content: '-';
+                }
+
+                .faq__questions__item__answer{   
+                    height: auto;
+                    padding-bottom: 24px;
+                    transition: height, .5s ease;
+                }
+            }
+        }
+    }
+}
