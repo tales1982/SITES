@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"defer></script>
+    <title>Parc Material</title>
+</head>
+<body>
+    <head id="header">
+      <div class="container">
+        <div class="cabecario">
+          <div class="cabecario_img">
+            <img src="img/logoPequeno.png" alt="logo parcmat" />
+          </div>
+          <div class="cabecario_texto">
+            <h3>Location -</h3>
+            <h3>Vente -</h3>
+            <h3>Entretien -</h3>
+            <h3>Réparation</h3>
+          </div>
+        </div>
+      </div>
+    </head>
+    <form>
+      <section id="dados-01">
+        <div class="container">
+          <div class="dados">
+            <div class="dados_clientes">
+              <div class="input dados-01__div70">
+                <label for="numeroCT"
+                  ><strong>Contrat de location n° :</strong></label
+                >
+                <input type="text" id="numeroCT" />
+              </div>
+              <div class="input dados-01__div30">
+                <label for="data"><strong>Date :</strong></label>
+                <input type="text" id="data" />
+              </div>
+            </div>
+            <div class="input">
+              <label for="client">Client :</label
+              ><input id="client" type="text" />
+            </div>
+            <p>Etabli par: Location</p>
+          </div>
+        </div>
+      </section>
+      <section id="dados-02">
+        <div class="container">
+          <div class="detalhes">
+            <div class="detales_div20">
+              <p class="detalhes_p__1">Code article</p>
+              <p class="detalhes_p__2">Designation</p>
+            </div>
+            <div class="detales_div70">
+              <p class="detalhes_p__3">Quantité</p>
+              <p class="detalhes_p__4">Unité</p>
+              <p class="detalhes_p__5">Prix Unitaire</p>
+            </div>
+            <div class="detales__div20">
+              <p class="detalhes_p__6">Total Code tva</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="dados-03">
+        <div class="container">
+          <div class="dados_maquinas">
+            <div class="dados_maquinas__p1">
+              <div class="material_div50">
+                <div class="label">
+                  <label for="material">Martériel :</label>
+                  <label for="modelo">Type :</label>
+                  <label for="equip">Equipement :</label>
+                </div>
+                <div class="paragrafosLabel">
+                  <div class="input">
+                    <select id="material">
+                      <option value="Mini-Pelle">MINI-PELLE</option>
+                      <option value="CHARGEUR COMPACT">CHARGEUR COMPACT</option>
+                      <option value="DUMPER COMPACT">DUMPER COMPACT</option>
+                      <option value="PLAQUE VIBRANTE">PLAQUE VIBRANTE</option>
+                      <option value="VIBREUR BETON">VIBREUR BETON</option>
+                      <option value="PILLONNEUSE">PILLONNEUSE</option>
+                      <option value="GROUPE ELETROGENE">
+                        GROUPE ELETROGENE
+                      </option>
+                    </select>
+                  </div>
+                  <div class="input">
+                    <input id="modelo" type="text" placeholder="VIO00...0000" />
+                  </div>
+                  <div class="input">
+                    <select id="equip">
+                      <option value="equipement">3 Godets</option>
+                      <option value=".....">.....</option>
+                      <option value="....."></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dados_maquinas__p1">
+              <div class="material_div50">
+                <div class="label">
+                  <label for="marque">Marque:</label>
+                  <label for="serie">N° de Série :</label>
+                  <label for="option">Option :</label>
+                </div>
+                <div class="paragrafosLabel">
+                  <select id="marque">
+                    <option value="marca">YANMAR</option>
+                    <option value="HUSQVARNA">HUSQVARNA</option>
+                    <option value="BELLE">BELLE</option>
+                    <option value="TEREX">TEREX</option>
+                    <option value="SANY">SANY</option>
+                  </select>
+                  <div class="input">
+                    <input id="serie" type="text" placeholder="0000" />
+                  </div>
+                  <div class="input">
+                    <input id="option" type="text" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="dados-04">
+        <div class="container">
+          <div class="datas">
+            <div class="datas_inicio">
+              <div class="input">
+                <label for="inicio">Début location :</label>
+                <input type="text" id="inicio" placeholder="00/00/00" />
+                <label for="inicioHora" class="labelA">à</label>
+                <input type="text" id="inicioHora" placeholder="00 : 00" />heures
+              </div>
+              <div class="input">
+                <label for="fimLoc">Fin de location :</label>
+                <input type="text" id="fimLoc" placeholder="00/00/00" />
+                <label for="retornoHora" class="labelB">à</label>
+                <input type="text" id="retornoHora" placeholder="00 : 00" />heures
+              </div>
+            </div>
+            <div class="datas_fim">
+              <div class="input">
+                <label for="horasDaMaquina">Compteur d'heures à l'enlèvement :</label>
+                <input type="text" id="horasDaMaquina" placeholder="0000" />heures
+              </div>
+              <div class="input">
+                <label for="horasDaMaquinaRetorno" id="labelHorasDaMaquinaRetorno">Compteur d'heures au retour :</label>
+                <input type="text" id="horasDaMaquinaRetorno" placeholder="0000" />heures
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="dados-05">
+        <div class="container">
+          <div class="contatos input">
+            <label for="periodo"
+              >Période de location <span class="element-com-seta"></span
+              ><input type="number" id="periodo" placeholder="0" /><select
+                id="dias"
+              >
+                <option value="jour">jour</option>
+                <option value="jours">jours</option>
+                <option value="....."></option>
+              </select>
+            </label>
+            <label for="contato"
+              >Contact client <span class="element-com-seta"></span
+              ><input type="text" id="contato"
+            /></label>
+            <label for="chantier"
+              >Chantier <span class="element-com-seta"></span
+              ><input type="text" id="chantier"
+            /></label>
+          </div>
+        </div>
+      </section>
+      <section id="dados-06">
+        <div class="container">
+          <div class="interacao input">
+            <div class="interacao_dias__alugado">
+              <div class="interacao_dias__alugado___div">
+                <p class="elementoP">LOC</p>
+                <p>
+                  LOCATION <span id="interacao_material"> </span>
+                  <span id="interacao_typo"> </span>
+                  <span id="interacao_serie"></span>
+                </p>
+              </div>
+              <div class="interacao_dias__alugado___div2">
+                <input
+                  type="number"
+                  id="interacao_quantidades__dias"
+                  placeholder="dia 1.000"
+                /><span>1.00000</span>
+                <input
+                  type="text"
+                  id="interacao_preco"
+                  placeholder="prix 000,000"
+                />
+                <p id="valor_total"></p>
+                <span>16 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="interacao input">
+            <div class="interacao_dias__alugado" id="PM012">
+              <div class="interacao_dias__alugado___div">
+                <p class="elementoPM012">PM012</p>
+                <p>FRAIS ANNEXE PARTICIP. BRIS DE MACHINE</p>
+              </div>
+              <div class="interacao_dias__alugado___div2">
+                <input
+                  type="number"
+                  id="interacao_quantidades__dias__seguro"
+                  placeholder="dia 1.000"
+                /><span>1.00000</span>
+                <input
+                  type="text"
+                  id="interacao_preco__seguro"
+                  placeholder="prix 000,000"
+                />
+                <p id="valor_total__seguro"></p>
+                <span>16 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="interacao textSeguro">
+            <p>
+              <strong
+                >Une Franchise de 1.500,00 €uros , à la charge du locataire, est
+                applicable en cas de bris de machine accidentelle</strong
+              >
+            </p>
+          </div>
+          <div class="interacao input" id="ACCLOC">
+            <div class="interacao_dias__alugado">
+              <div class="interacao_dias__alugado___div">
+                <p class="elementoACCLOC">ACCLOC</p>
+                <p>ACCOMPTE SUR LOCATION</p>
+              </div>
+              <div class="interacao_dias__alugado___div2">
+                <input
+                  type="text"
+                  id="inputCaution"
+                  placeholder="- 1,0000"
+                />
+                <span>1.00000</span>
+                <input
+                  type="text"
+                  id="interacao_preco__caution"
+                  placeholder="prix 000,000"
+                />
+                <p id="valor_total__caution"></p>
+                <span>16 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="interacao input" id="tabe">
+            <div class="interacao_dias__alugado">
+              <div class="interacao_dias__alugado___div">
+                <p class="elementoLOCZ">TABE...</p>
+                <p>LOCATION BRH </p>
+              </div>
+              <div div class="interacao_dias__alugado___div2">
+                <input
+                  type="number"
+                  id="diasTabe"
+                  placeholder="dias"
+                /><span>1.00000</span>
+                <input
+                  type="text"
+                  id="precoTabe"
+                  placeholder="prix 000,000"
+                />
+                <p id="valorTotalTabe"></p>
+                <span>16 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="interacao input" id="LOCZ">
+            <div class="interacao_dias__alugado">
+              <div class="interacao_dias__alugado___div">
+                <p class="elementoLOCZ">LOCZ2</p>
+                <p>TRANSPORTE ZONE 2</p>
+              </div>
+              <div div class="interacao_dias__alugado___div2">
+                <input
+                  type="number"
+                  id="interacao_quantidades__dias__transporte"
+                  placeholder="ida e volta"
+                /><span>1.00000</span>
+                <input
+                  type="text"
+                  id="interacao_preco__transporte"
+                  placeholder="prix 000,000"
+                />
+                <p id="valor_total__transporte"></p>
+                <span>16 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="interacao input" id="PM014">
+            <div class="interacao_dias__alugado">
+              <div class="interacao_dias__alugado___div">
+                <p class="elementoPM014">PM014</p>
+                <p>NETTOYAGE MACHINE</p>
+              </div>
+              <div class="interacao_dias__alugado___div2">
+                <input
+                  type="text"
+                  id="inputHorasDeLimpesa"
+                  placeholder="1 hora"
+                /><span>1.00000</span>
+                <input
+                  type="text"
+                  id="interacao_preco__limpesa"
+                  placeholder="prix 000,000"
+                />
+                <p id="valor_total__limpesa"></p>
+                <span>16 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="interacao input" id="PM0133">
+            <div class="interacao_dias__alugado">
+              <div class="interacao_dias__alugado___div">
+                <p class="elementoPM0133">PM0133</p>
+                <p>REMPLISAGEN DE DIESEL</p>
+              </div>
+              <div div class="interacao_dias__alugado___div2">
+                <input
+                  type="number"
+                  id="ĺitrosPm0133"
+                  placeholder="litros"
+                /><span>1.00000</span>
+                <input
+                  type="text"
+                  id="precoPm0133"
+                  placeholder="prix 000,000"
+                />
+                <p id="resultadoPm0133"></p>
+                <span>16 %</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="dados-07">
+        <div class="container">
+          <div class="precoTVA_dados">
+            <div class="precoTVA_dados__tva">
+              <p id="paragrafo-1">Rècapitulatif :</p>
+              <p id="paragrafo-2">Montant Imposable</p>
+              <p id="paragrafo-3">Code T.V.A.</p>
+              <p id="paragrafo-4">Montant T.V.A.</p>
+            </div>
+            <div class="precoTVA_dados__tva2">
+              <p id="paragrafo-5">Total Hors T.V.A.</p>
+              <p id="paragrafo-6"></p>
+            </div>
+            <div class="precoTVA_dados__tvaValor3">
+              <p id="paragrafo-12"></p>
+            </div>
+          </div>
+          <div class="precoTVA_dados_baixo">
+            <div class="precoTVA_dados__tvaValor">
+              <p id="paragrafo-7"></p>
+              <p id="paragrafo-8">16%</p>
+              <p id="paragrafo-9"></p>
+            </div>
+            <div class="precoTVA_dados__tvaValor2">
+              <p id="paragrafo-10">Total T.V.A.</p>
+              <p id="paragrafo-11"></p>
+            </div>
+            <div class="precoTVA_dados__tvaValor3">
+              <p id="paragrafo-12">16 %</p>
+            </div>
+          </div>
+          <div class="precoTVA_dados__precos">
+            <div class="precoTVA_dados__text">
+              <p></p>
+            </div>
+            <div class="precoTVA_dados__total">
+              <p>Total T.T.C</p>
+              <p id="preco_final">000000</p>
+            </div>
+            <div class="precoTVA_dados__total2"></div>
+          </div>
+        </div>
+      </section>
+      <section id="dados-08">
+        <div class="container">
+          <div class="intracom100">
+            <P><strong>Notre société conserve l'entière propriété du matériel  vendu jusqu'à complet paiment du prix.</strong></P>
+            <p><strong>La présente facture est certifiée sincère, véritable et non encore acquitée.</strong></p>
+            <p id="intracomText"> N° Ident.  Intracom: LU23633237</p>
+            <p><strong>Tout réclamation doit nous parvenirbpar écrit endéans les 8 jours qui suivent la réception de la marchandise ou la prestation de service. En cas de</strong></p>
+            <p id="intracomText2"><strong>litiae. les tribunaux de Luxembourg a sont seuls compétents.</strong></p>
+          </div>
+
+        </div>
+      </section>
+      <section id="dados-09">
+        <div class="container">        
+          <div id="dadosBancario">
+            <p>42, rue jos kieffer <span class="barra">/</span> Z.I lankelz <span class="barra">/</span> L-4176 Esch-sur Alzette <span class="barra">/</span> <strong>T</strong>+352 31 17 48 <span class="barra">/</span> <strong>F</strong>+352 31 17 48-282 <span class="barra">/</span>info@parcmat.com <span class="barra">/</span> www.parcmat.lu</p>
+            <p>BGL BNP Paribas : LU38 0030 8403 1336 0000 - BIC : BGLLLULL <span class="barra">/</span> BIL : LU79 0023 1258 3704 5600 - BIC : BILLLULL</p>
+          </div>
+          <div id="centtralizar">
+            <p>ID n° LU 173 542 81 <span class="barra">/</span> R. C. Luxembourg B 52981 <span class="barra">/</span> MATRICULE TVA : 1998 2200 418</p>
+          </div>
+        </div>
+
+      </section>
+
+      <button type="submit" id="btn">.</button>
+    </form>
+  </body>
+</html>
