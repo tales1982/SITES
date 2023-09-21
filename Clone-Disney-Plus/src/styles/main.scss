@@ -51,26 +51,51 @@ color: variaveis.$corTextoPrincipal;
 //criando clase para os texto
 .text--big{
     @include text(18px);
+
+    @media(max-width: 768px){
+        @include title(15px);
+    }
 }
 
 .text{
     @include text;
+
+    @media(max-width: 768px){
+        @include title(14px);
+    }
 }
 
 .text--small{
     @include text(12px);
+
+    @media(max-width: 768px){
+        @include title(11px);
+    }
 }
 
 .title--big{
-    @include title(44px)
+    @include title(44px);
+
+    @media(max-width: 768px){
+        @include title(26px);
+    }
 }
 
 .title{
     @include title;
+
+    @media(max-width: 768px){
+        @include title(24px);
+    }
 }
 
 .title--small{
-    @include title(28px)
+    @include title(28px);
+
+    @media(max-width: 768px){
+        @include title(22px)
+    }
+
 }
 
 .link-text{
@@ -127,6 +152,10 @@ color: variaveis.$corTextoPrincipal;
     align-items: center;
     position: relative;
 
+    @media (max-width:768px) {
+        display: block;
+    }
+
     img{
         max-width: 100%;
     }
@@ -162,5 +191,11 @@ color: variaveis.$corTextoPrincipal;
         flex-direction: column;
         justify-content: center;
         width: calc(50% - 5.6vw);
+
+        @media (max-width:768px) {
+            position: relative;
+            left: 0;
+            width: 100%;
+        }
     }
 }
