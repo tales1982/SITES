@@ -1,41 +1,57 @@
-.header{
-    //Deichando o cabecario fixo
-    position: sticky;
-    top: 0;
-    left: 0;
+@use "variaveis";
 
+.header {
+  //Deichando o cabecario fixo
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: variaveis.$corDeFundo;
+  transition:  background-color .5 ease;
+  z-index: 1;//corrigindo o bug do rei leao 
 
-    &__container{
-        padding: 8px 36px;
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
+  &--is-hidden {
+    background-color: transparent;
+    transition:  background-color 1 ease;
+
+    .header {
+     &__logo, &__links__item:first-child{
+        opacity: 0;
+        
+        //visibility: hidden;
+        transition:opacity 1s ease;
+     }
     }
+  }
 
-    &__logo{
-        display: flex;
-        justify-content: center;
-        max-width:80px;
-        width: 100%;
-        margin: 5px;
+
+  
+
+  &__container {
+    padding: 8px 36px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    max-width: 80px;
+    width: 100%;
+    margin: 5px;
+    transition:opacity .5s ease;
+  }
+
+  &__links {
+    display: flex;
+
+    &__item {
+      margin: 5px;
+      transition:opacity 1s ease;
     }
+  }
 
-    &__links{
-        display: flex;
-
-        &__item{
-          margin: 5px;
-        }
-    }
-
-.button{
+  .button {
     height: 40px;
-
+  }
 }
-
-}
-
-.hidden{
-    visibility: hidden;
-}
-
