@@ -1,10 +1,12 @@
 @use 'variaveis';
+@use 'header';
 @use 'hero';
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
 @use 'faq';
 @use 'footer';
+
 
 @font-face {
     font-family: Avenir;
@@ -24,6 +26,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 body{
@@ -78,16 +81,42 @@ color: variaveis.$corTextoPrincipal;
 
 
 .button{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
     color: variaveis.$corTextoSecundario;
-    background-color: #6421ff;
+    background-color: variaveis.$corDeFundoButaoPrimaio;
     text-transform: uppercase;
     border-radius: 4px;
-    margin-top: 2vw;
-    margin-top: 8px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;//espaçamentos entre as letras dos butoes
+    border: 1px solid variaveis.$corDeFundoButaoPrimaio;
+    cursor: pointer;
+
+ 
+    &:hover{
+            background-color:  lighten(variaveis.$corDeFundoButaoPrimaio,3%);
+        }
+
+    &--secundary{
+        background-color: variaveis.$corDeFundoButaoSecundario;
+        border-color: variaveis.$corDeFundoButaoSecundario;
+       
+    }
+
+    &--dark{
+        background-color: rgba(variaveis.$corDeFundoButaoDark,0.8); 
+        border-color: variaveis.$corTextoSecundario;
+
+        &:hover{
+            background-color:  variaveis.$corTextoSecundario;
+            color:  variaveis.$corDeFundo;
+        }
+    }
 }
 
 
