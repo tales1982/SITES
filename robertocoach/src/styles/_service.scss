@@ -1,0 +1,60 @@
+@import 'variables';
+
+.about{
+    @include flex-row();
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/dist/images/bgHome.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100vw;
+    height: 100vh;
+    color: $colorSilver;
+    width: 100vw;
+    
+
+    &__title{
+        font-size: 18px;
+        padding-left: 50px;
+        max-width: 1100px;
+        text-align: justify;
+        
+        &--name1{
+            font-size: 3em;
+            color: $titlecolors;
+            margin-top: 20px;
+
+        }
+        &--name{
+            font-size: 3em;
+            color: $titlecolors;
+            padding-bottom: 10px;
+            -webkit-text-stroke: 1px rgb(248, 78, 78);
+            text-decoration: underline;
+        }
+
+        h3{
+            color: $titlecolors;
+            margin-top: 20px;
+        }
+        p{
+            margin: 10px 0;
+        }
+
+
+        
+    }
+
+    &__img{
+margin: 30px 50px 20px 20px;
+        img{
+            border-radius: 50%;
+            border: 3px solid $titlecolors;
+            width: 600px;
+            height: auto;
+            padding-right: 50px;
+            background-color:$titlecolors ;
+        }
+        
+    }
+}

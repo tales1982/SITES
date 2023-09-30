@@ -1,0 +1,39 @@
+@import 'variables';
+
+button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: $navtext;
+    font-weight: bold;
+    font-size: .9em;
+    transition: background-color .5s ease;
+    &:hover{
+        border: solid;
+        border-radius:10px ;
+        background-color: $colorSilver;
+        transform: scale(1.05);
+        border: none;
+    }
+}
+
+
+.home__contentfooter--button{
+    margin-top: 30px;
+    width: 400px;
+    height: 60px;
+    font-size: 1em;
+    font-family: Minion;
+    border-radius: 15px;
+    border: 3px solid white;
+    background-color: $titlecolors;
+    color: $navtext;
+
+    &:hover{
+        background-color: yellow;
+        border-radius: 15px;
+        border: 3px solid white;
+    }
+}

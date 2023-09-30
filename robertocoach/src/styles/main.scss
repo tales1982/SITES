@@ -1,23 +1,6 @@
 @use 'reset';
 @use 'home';
 @use 'variables';
-@import 'variables';
+@use 'button';
+@use 'service';
 
-button{
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    color: $navtext;
-    font-weight: bold;
-    font-size: .9em;
-    transition: background-color .5s ease;
-    &:hover{
-        border: solid;
-        border-radius:10px ;
-        background-color: $colorSilver;
-        transform: scale(1.05);
-        
-    }
-}

@@ -10,6 +10,19 @@
 }
 
 
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
 $titlecolors:#ffbf00;
 $navtext:#30078a;
-$colorSilver:#C0C0C0;
+$colorSilver:#dddada;
