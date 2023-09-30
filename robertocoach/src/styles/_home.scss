@@ -19,7 +19,8 @@
     align-items: center;
 
     &__header{
-    
+    position: fixed;
+    top: 0;
     &__nav{
     @include flex-row();
     align-items: center;
@@ -44,9 +45,7 @@
             font-weight: bold;
             font-size: 1.5em;
             margin-left: 300px;
-            &--li{
-                
-            }
+           
         }
     }
 }
@@ -59,7 +58,7 @@
 
     &--img{
         width: 700px;
-        margin: 200px 100px;
+        margin: 200px 100px 50px 100px;
         border: 1px solid $titlecolors;
         border-radius: 20px;
     }
@@ -68,7 +67,7 @@
         @include flex-col();
         justify-content: center;
         text-align: center;
-       width: 800px;
+        width: 800px;
 
         &--h1{
         color: $titlecolors;
@@ -78,10 +77,36 @@
 
     &--h6{
         margin-top: 50px;
-        color: white;
+        color: $colorSilver;
        font-size: 30px;
     }
     }
    
+}
+
+&__contentfooter{
+
+    width: 1000px;
+    color: $colorSilver;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    
+
+    &--button{
+        margin-top: 30px;
+        width: 400px;
+        height: 60px;
+        font-size: 1em;
+        font-family: Minion;
+        border-radius: 15px;
+        border: 3px solid white;
+        background-color: $titlecolors;
+        color: $navtext;
+
+        &:hover{
+            background-color: yellow;
+        }
+    }
 }
 }
