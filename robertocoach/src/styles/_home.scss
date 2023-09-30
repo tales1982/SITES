@@ -1,0 +1,87 @@
+@import 'variables';
+
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.home{
+
+    @include flex-col();
+    justify-content: center;
+    align-items: center;
+
+    &__header{
+    
+    &__nav{
+    @include flex-row();
+    align-items: center;
+    justify-content: space-around;
+    color: $navtext;
+    width: 90vw;
+    background-color:$titlecolors;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-family: Anton;
+
+    &__textNave{
+        font-size: 30px;
+    }
+    
+        &__ul{
+            width: 500px;
+            @include flex-row();
+            justify-content: space-between;
+            list-style: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-left: 300px;
+            &--li{
+                
+            }
+        }
+    }
+}
+
+&__content{
+    @include flex-row();
+    justify-content: center;
+    align-items: center;
+
+
+    &--img{
+        width: 700px;
+        margin: 200px 100px;
+        border: 1px solid $titlecolors;
+        border-radius: 20px;
+    }
+
+    &--text{
+        @include flex-col();
+        justify-content: center;
+        text-align: center;
+       width: 800px;
+
+        &--h1{
+        color: $titlecolors;
+        font-size: 60px;
+    }
+
+
+    &--h6{
+        margin-top: 50px;
+        color: white;
+       font-size: 30px;
+    }
+    }
+   
+}
+}
