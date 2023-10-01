@@ -38,12 +38,12 @@ button{
         border: 3px solid white;
     }
 
-    @media(max-width:425px) {
+    @media(max-width:767px) {
         margin-top: 30px;
         margin-bottom: 10px;
         width: 200px;
         height: 40px;
-        font-size: 1.1em;
+        font-size: .8em;
         
      }
 }
