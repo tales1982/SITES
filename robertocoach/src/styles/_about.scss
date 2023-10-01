@@ -198,19 +198,18 @@
 
 @media (min-width:1025px){
     .about{
-     
+    
     
         &__title{
             font-size: 18px;
             padding-left: 50px;
-            max-width: 1100px;
             text-align: justify;
-    
             &--hidden{
                 display: none;
             }
             
             &--name1{
+                
                 font-size: 2.3em
                 }
     
