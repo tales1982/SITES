@@ -34,7 +34,6 @@
             font-size: 3em;
             color: $titlecolors;
             padding-bottom: 10px;
-            -webkit-text-stroke: 1px rgb(248, 78, 78);
             text-decoration: underline;
 
         }
@@ -53,9 +52,6 @@
 
 
     &__img{
-
-   
-
 
         margin: 30px 50px 20px 20px;
         img{
@@ -139,6 +135,11 @@
         background-image: url('/dist/images/bgHomeMobile.png');
         background-repeat:repeat;
 
+        &__img{
+            display: none;
+        }
+
+
         &__title{
         text-align: center;
         padding-left: 0px;
@@ -177,17 +178,12 @@
                 align-items: center;
                 img{
                     display: flex;
-                    width: 80%;
+                    width: 50%;
                     border-radius: 50%;
                     padding-right: 30px;
                     background-color: $titlecolors;
             }
 
-        }
-    
-        &__img{
-            display: none;
-            width: 200px;
         }
     }
     
