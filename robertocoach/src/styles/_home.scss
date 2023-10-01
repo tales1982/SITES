@@ -15,25 +15,29 @@
 &__header{
     position: fixed;
     top: 0;
+
         &__nav{
         @include flex-row();
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         color: $navtext;
         width: 90vw;
         background-color:$titlecolors;
         height: 60px;
-        margin-top: 30px;
+        margin-top: 10px;
         border-radius: 20px;
+
+        &__h2{
+            margin-left: 10px
+        }
     
-    &__ul{
-            width: 500px;
+        &__ul{
             @include flex-row();
             justify-content: space-between;
             list-style: none;
             font-weight: bold;
             font-size: 1.5em;
-            margin-left: 300px;
+            margin-right: 10px;
         }
     }
 }
@@ -87,6 +91,8 @@ a{
         text-decoration: none;
 }
 
+
+/*=========================== MOBILE =================================*/
 
 @media (min-width:768px) and (max-width:1024px){
     .home{

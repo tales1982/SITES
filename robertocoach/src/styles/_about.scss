@@ -11,14 +11,12 @@
     height: 100vh;
     color: $colorSilver;
     width: 100vw;
-    
 
     &__title{
         font-size: 18px;
         padding-left: 50px;
         max-width: 1100px;
         text-align: justify;
-
 
         &--hidden{
             display: none;
@@ -28,28 +26,25 @@
             font-size: 3em;
             color: $titlecolors;
             margin-top: 20px;
-
         }
+
         &--name{
             font-size: 3em;
             color: $titlecolors;
             padding-bottom: 10px;
             text-decoration: underline;
-
         }
 
         h3{
             color: $titlecolors;
             margin-top: 20px;
         }
+
         p{
             margin: 10px 0;
         }
 
-
-        
     }
-
 
     &__img{
 
@@ -61,12 +56,13 @@
             height: auto;
             padding-right: 50px;
             background-color:$titlecolors ;
-
         }
         
     }
 }
 
+
+/*=========================== MOBILE =================================*/
 @media (max-width:767px) {
   
     .about{
@@ -81,9 +77,16 @@
         padding-left: 0px;
         width: 100%;
 
-         &--name{
-            padding-top: 5%;
+            &--name1{
+            font-size: 1.4em
             }
+
+            &--name{
+            font-size: 1.3em;
+            padding: 10px 0;
+            color: aliceblue
+            }
+
 
             &--info{
                 @include flex-col();
