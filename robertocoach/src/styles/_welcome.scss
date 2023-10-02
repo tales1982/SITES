@@ -80,9 +80,11 @@
 @media (max-width:767px){
 .welcome{
 height: 100%;
+padding-top: 80px;
 
 &__presentation{
     h2{
+        font-size: 1.4em;
         text-align: center;
         margin: 10px
     }
@@ -96,6 +98,7 @@ height: 100%;
         @include flex-col();
         justify-content: center;
         align-items: center;
+
 
         &--text{
             width: 100%;
