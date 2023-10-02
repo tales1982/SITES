@@ -13,7 +13,7 @@ button{
     &:hover{
         border: solid;
         border-radius:10px ;
-        background-color: $colorSilver;
+        background-color: $btnHover;
         transform: scale(1.05);
         border: none;
     }
