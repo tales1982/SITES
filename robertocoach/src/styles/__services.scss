@@ -1,0 +1,75 @@
+@import 'variables';
+
+.services{
+    @include bg();
+    @include flex-col();
+    align-items: center;
+    
+    &__h2{
+        margin: 90px;
+        font-size: 1.6vw;
+        color: $titlecolors;
+    }
+
+    &__h5{
+        margin: 80px;
+        font-size: 1.8vw;
+        color:$colorSilver;
+    }
+
+    &__img{
+        @include flex-row();
+        width: auto;
+        &__imgColune{
+            @include flex-col();
+            text-align: center;
+            font-size: .9vw;
+            color: white;
+        }
+        
+        &--item{
+            margin: 10px;
+            width: 350px;
+            height: 220px;
+            border: 1px solid white;
+        }
+    }
+}
+
+@media (max-width:423px){
+    .services{
+       height: auto;
+       background-repeat:repeat;
+        
+        &__h2{
+            margin: 5px;
+            font-size: 1em;
+            text-align: center;
+            color: $titlecolors;
+        }
+    
+        &__h5{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            color: $titlecolors;
+            
+        }
+    
+        &__img{
+            @include flex-col();
+            
+            &__imgColune{
+                font-size: 1em;
+                color: white;
+            }
+            
+            &--item{
+                margin: 5px;
+                width: 300px;
+                height: 200px;
+                border: 1px solid white;
+            }
+        }
+    }
+}

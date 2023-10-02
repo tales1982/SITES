@@ -22,6 +22,15 @@
     
 }
 
+@mixin bg{
+background-image: url('/dist/images/bgHome.png');
+background-repeat: no-repeat;
+background-position: cover;
+width: 100vw;
+height: 100vh;
+}
+
+
 
 $titlecolors:#ffbf00;
 $navtext:#30078a;

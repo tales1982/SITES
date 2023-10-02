@@ -1,14 +1,10 @@
 @import 'variables';
 
 .welcome{
-    background-image: url('/dist/images/bgHome.png');
-    background-repeat: no-repeat;
-    background-position: cover;
+    @include bg();
     @include flex-col();
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
     font-size: 1.4em;
     color: white;
 

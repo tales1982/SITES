@@ -2,11 +2,7 @@
 
 
 .home{
-    background-image: url('/dist/images/bgHome.png');
-    background-repeat: no-repeat;
-    background-position: cover;
-    width: 100vw;
-    height: 100vh;
+    @include bg();
     @include flex-col();
     justify-content: space-evenly;
     align-items: center;
