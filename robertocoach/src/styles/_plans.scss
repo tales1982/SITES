@@ -1,0 +1,24 @@
+@import 'variables';
+
+.plans{
+    @include bg();
+    @include flex-col();
+
+    h2{
+        color: white;
+    }
+
+    &__title{
+        @include flex-row();
+        color: $titlecolors;
+        width: 10%;
+
+        &--underline{
+        border-bottom: 3px solid  $titlecolors;
+        width: 800px;
+        margin: 0 10px 50px;
+    }
+}
+    }
+
+    
