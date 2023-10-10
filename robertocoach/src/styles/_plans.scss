@@ -6,17 +6,21 @@
 
     h2{
         color: white;
+        font-size: 2em;
+        padding: 50px
     }
 
     &__title{
         @include flex-row();
         color: $titlecolors;
-        width: 10%;
+        padding-top: 100PX;
+        width: 100%;
+        margin-left: 50px;
 
         &--underline{
-        border-bottom: 3px solid  $titlecolors;
+        border-bottom: 10px solid  $titlecolors;
         width: 800px;
-        margin: 0 10px 50px;
+        margin: 0 1px 10px;
     }
 }
     }
