@@ -45,7 +45,7 @@
                     <li class="home__header__nav--li"><button><a href="#about">About</a> </button></li>
                     <li class="home__header__nav--li"><button><a href="#services">Service</a></button></li>
                     <li class="home__header__nav--li"><button><a href="#plans">Plans</a></button></li>
-                    <li class="home__header__nav--li"><button><a href=""></a>Contact</button></li>
+                    <li class="home__header__nav--li"><button><a href="#contact">Contact</a></button></li>
                 </ul>
             </nav>
         </header>
@@ -70,7 +70,7 @@
             </p>
 
         </div>
-        <button class="home__contentfooter--button">Planifier un cours de test</button>
+        <button class="home__contentfooter--button"><a href="#form">Planifier un cours de test</a></button>
     </section>
     <section class="about" id="about">
         <div class="about__title">
@@ -106,7 +106,7 @@
                     vous-même. Nous apprendrons à faire face aux défis émotionnels et à cultiver une mentalité positive
                     qui
                     vous permettra de surmonter les obstacles et d'atteindre vos rêves.</p>
-                
+
 
 
             </div>
@@ -167,18 +167,83 @@
             <h1>Plans</h1>
             <div class="plans__title--underline"></div>
         </div>
-        <div class="plans__plans">
-            <div class="plans__plans--item">
+        <div class="plans__DivPlans">
+            <div class="plans__DivPlans--item">
                 <!--foto titulo butao-->
+                <div class="plans__DivPlans--item--img">
+                    <img src="dist/images/plano1.jpg" alt="Couple">
+                </div>
+                <div class="plans__DivPlans--item--footer">
+                    <h2>Consultation en ligne</h2>
+                    <button><a href="#form">Savoir plus</a></button>
+                </div>
             </div>
-            <div class="plans__plans--item">
+            <div class="plans__DivPlans--item">
                 <!--foto titulo butao-->
+                <div class="plans__DivPlans--item--img">
+                    <img class="imagem2" src="dist/images/plano3.jpg" alt="Couple">
+                </div>
+                <div class="plans__DivPlans--item--footer">
+                    <h2>Entraîneur personnel en ligne</h2>
+                    <button><a href="#form">Savoir plus</a></button>
+                </div>
             </div>
-            <div class="plans__plans--item">
+            <div class="plans__DivPlans--item">
                 <!--foto titulo butao-->
+                <div class="plans__DivPlans--item--img">
+                    <img src="dist/images/plano2.jpg" alt="Couple">
+                </div>
+                <div class="plans__DivPlans--item--footer">
+                    <h2>Cours en personne</h2>
+                    <button><a href="#form">Savoir plus</a></button>
+                </div>
             </div>
         </div>
-        
+
+    </section>
+    <section class="footer" id="contact">
+    <div class="footer__col">
+        <div class="footer__col__formulaire" id="form">
+            <h1 class="h1">Formulaire de contact</h1>
+            <form action="https://formsubmit.co/Limaroberto3004@gmail.com" method="POST">
+                <label for="name">Nom</label>
+                <input type="text" name="name" id="name" required />
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://www.circullar-technology.com/" />
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <div class="footer__col__contact">
+            <h1 class="footer__col__contact--h1">Contact</h1>
+            <h6 class="footer__col__contact--h6">Si vous avez des questions, n'hésitez pas à me contacter.</h6>
+            <h6 class="footer__col__contact--h6">Social Midia</h6>
+            <div class="footer__col__contact--icon">
+                <a href="#"><img src="dist/images/icons/dentro.png" alt="linkdin"></a>
+                <a href="#"><img src="dist/images/icons/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="dist/images/icons/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="dist/images/icons/youtube.png" alt="youtube"></a>
+            </div>
+            <div class="footer__col__contact--adress">
+                <h2>Contact</h2>
+                <ul>
+                    <li><img src="dist/images/icons/chamar.gif" alt="telephone">
+                        <p>352 661 221 121</p>
+                    </li>
+                    <li><img src="dist/images/icons/o-email.gif" alt="email">
+                        <p>Limaroberto3004@gmail.com</p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>     
+    </div>
+    <div class="footer__footerEnd">
+        <p id="footerEnd">Roberto Lima Entraîneur personnel © 2023 Tous droits réservés.</p>
+    </div> 
     </section>
 
 </body>
