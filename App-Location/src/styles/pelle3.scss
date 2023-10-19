@@ -1,0 +1,39 @@
+.machines{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            text-align: center;
+            padding: 10px;
+        }
+        
+        h2{
+            text-align: center;
+            padding: 10px;
+        }
+
+    background-color: red;
+
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+
+        &--item{
+            display: flex;
+           flex-direction: row;
+           justify-content: center;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(148, 163, 8);
+            margin: 5px;
+
+
+            &--dones{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
