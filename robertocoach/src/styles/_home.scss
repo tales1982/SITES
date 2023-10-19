@@ -23,8 +23,18 @@
         margin-top: 10px;
         border-radius: 20px;
 
-        &__h2{
-            margin-left: 10px
+        #link-beto{
+            padding-left: 5px;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: $navtext;
+            &:hover{
+                border: solid;
+                border-radius:10px ;
+                background-color: $btnHover;
+                transform: scale(1.05);
+                border: none;
+            }
         }
     
         &__ul{
