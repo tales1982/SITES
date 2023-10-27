@@ -8,28 +8,13 @@
         margin-top: 100px;
         margin-left: 100px;
         color: white;
-<<<<<<< HEAD
-        font-size: 2em;
-        padding: 50px
-=======
         font-size: 1.5em
->>>>>>> b358dd51f0009f223bbee7b62dd23dd802368477
     }
 
     &__title{
         @include flex-row();
         justify-content: center;
         color: $titlecolors;
-<<<<<<< HEAD
-        padding-top: 100PX;
-        width: 100%;
-        margin-left: 50px;
-
-        &--underline{
-        border-bottom: 10px solid  $titlecolors;
-        width: 800px;
-        margin: 0 1px 10px;
-=======
         width: 100%;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -46,7 +31,6 @@
         height: 35px;
         width: 70vw;
         
->>>>>>> b358dd51f0009f223bbee7b62dd23dd802368477
     }
 }
 
@@ -103,7 +87,6 @@
                 margin-top: 30px;
                 margin: 20px;
                 font-size: 1em;
-                font-family: Minion;
                 border-radius: 15px;
                 border: 3px solid rgba(10, 10, 10, 0.192);
                 background-color: $titlecolors;
@@ -219,7 +202,6 @@
                     margin-top: 30px;
                     margin: 20px;
                     font-size: 1em;
-                    font-family: Minion;
                     border-radius: 15px;
                     border: 3px solid rgba(10, 10, 10, 0.192);
                     background-color: $titlecolors;
@@ -324,7 +306,6 @@
                     margin-top: 30px;
                     margin: 20px;
                     font-size: 1em;
-                    font-family: Minion;
                     border-radius: 15px;
                     border: 3px solid rgba(10, 10, 10, 0.192);
                     background-color: $titlecolors;
@@ -429,7 +410,6 @@
                         margin-top: 30px;
                         margin: 20px;
                         font-size: 1em;
-                        font-family: Minion;
                         border-radius: 15px;
                         border: 3px solid rgba(10, 10, 10, 0.192);
                         background-color: $titlecolors;
