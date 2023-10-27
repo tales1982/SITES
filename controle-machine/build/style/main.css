@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__img {
+  width: 600px;
+}
+.header__h1 {
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header__img {
+    width: 300px;
+  }
+  .header__h1 {
+    font-size: 1.3em;
+  }
+}
