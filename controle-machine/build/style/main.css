@@ -19,16 +19,21 @@
   font-size: 2.5em;
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .header .header__img {
+    width: 200px;
+  }
+  .header .header__h1 {
+    font-size: 1.2em;
+  }
+}
 
 #vio50 {
   width: 150px;
 }
-
 @media (max-width: 768px) {
-  .header__img {
-    width: 300px;
-  }
-  .header__h1 {
-    font-size: 1.5em;
+  #vio50 {
+    width: 150px;
+    margin-left: -100px;
   }
 }

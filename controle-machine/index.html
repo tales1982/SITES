@@ -32,32 +32,67 @@
       <section class="details">
         <form class="form-control">
           <div class="row">
-            <div class="row m-2">
-              <label for="data" class="col-2">Date:</label>
-              <input type="text" class="col-2 form-control-md" id="data" />
+            <div class="col-10">
+              <div class="row m-2">
+                <label for="data" class="col-2">Date:</label>
+                <input type="text" class="col-3 form-control-md" id="data" required/>
+              </div>
+              <div class="row m-2">
+                <label for="serie" class="col-2">N° Serie:</label>
+                <input type="text" class="col-3 form-control-md" id="serie" required/>
+              </div>
+              <div class="row m-2">
+                <label for="modelo" class="col-2">Modelo:</label>
+                <input type="text" class="col-3 form-control-md" id="modelo" required/>
+              </div>
+              <div class="row m-2">
+                <label for="hora" class="col-2">Hora:</label>
+                <input type="text" class="col-3 form-control-md" id="hora" required/>
+              </div>
             </div>
-            <div class="row m-2">
-              <label for="serie" class="col-2">N° Serie:</label>
-              <input type="text" class="col-2 form-control-md" id="serie" />
-            </div>
-            <div class="row m-2">
-              <label for="modelo" class="col-2">Modelo:</label>
-              <input type="text" class="col-2 form-control-md" id="modelo" />
-            </div>
-            <div class="row m-2">
-              <label for="hora" class="col-2">Hora:</label>
-              <input type="text" class="col-2 form-control-md" id="hora" />
+            <div class="col-2 bg-red">
+              <img
+                id="vio50"
+                src="build/images/yanmar-mini-pelle-vio50.jpg"
+                alt=""
+              />
             </div>
             <br />
           </div>
           <hr />
           <div class="row m-2">
-            <label for="data" class="col-2">Contrat:</label>
+            <label for="data" class="col-1">Contrat:</label>
             <input type="text" class="col-2 form-control-md" />
           </div>
           <div class="row m-2">
-            <label for="cliente" class="col-2">Cliente:</label>
+            <label for="cliente" class="col-1">Cliente:</label>
             <input type="text" class="col-2 form-control-md" />
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-4"><h2>Extérieur</h2></div>
+            <div class="col-4"><h2>Départ</h2></div>
+            <div class="col-4"><h2>Retour</h2></div>          
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-4"><p>Lavage</p></div>
+            <div class="col-4">
+              <p> <input type="radio" name="lavage" id="depart_lavage" value="depart_lavage_OK">PRET <input type="radio" name="lavage" id="deport_lavage_non" value="depart_lavage_NON"> NON</p>
+            </div>
+            <div class="col-4">
+              <p> <input type="radio" name="lavage" id="return_lavage_ok" value="return_OK">PRET <input type="radio" name="lavage" id="return_lavage_non" value="return_NON"> NON</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-4"><p>vitre</p></div>
+            <div class="col-4">
+              <p> <input type="radio" name="vitre" id="vitre" value="OK">PRET <input type="radio" name="vitre" id="vitre" value="NON"> NON</p>
+            </div>
+            <div class="col-4">
+              <p> <input type="radio" name="vitre" id="vitre" value="OK">PRET <input type="radio" name="vitre" id="vitre" value="NON"> NON</p>
+            </div>
           </div>
           <button type="submit" class="btn btn-primary">Envoier</button>
         </form>
