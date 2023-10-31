@@ -14,11 +14,19 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="build/script/main.js" defer></script>
+    <script src="build/script/setPdf.js" defer></script>
     <link rel="stylesheet" href="build/style/main.css" />
     <title>Controle Machinne</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="conteudoHTML">
       <div class="section">
         <header class="header">
           <img
@@ -30,27 +38,51 @@
         </header>
       </div>
       <section class="details">
-        <form class="form-control">
+        <form class="form-control" action="https://formsubmit.co/tales_lima_1982@hotmail.com" method="POST">
           <div class="row">
             <div class="col-10">
               <div class="row m-2">
                 <label for="data" class="col-2">Date:</label>
-                <input type="text" class="col-3 form-control-md" id="data" required/>
+                <input
+                  type="text"
+                  class="col-3 form-control-md"
+                  id="data"
+                  required
+                  name="Date: "
+                />
               </div>
               <div class="row m-2">
                 <label for="serie" class="col-2">N° Serie:</label>
-                <input type="text" class="col-3 form-control-md" id="serie" required/>
+                <input
+                  type="text"
+                  class="col-3 form-control-md"
+                  id="serie"
+                  required
+                  name="N° serie: "
+                />
               </div>
               <div class="row m-2">
                 <label for="modelo" class="col-2">Modelo:</label>
-                <input type="text" class="col-3 form-control-md" id="modelo" required/>
+                <input
+                  type="text"
+                  class="col-3 form-control-md"
+                  id="modelo"
+                  required
+                  name="Modelo: "
+                />
               </div>
               <div class="row m-2">
-                <label for="hora" class="col-2">Hora:</label>
-                <input type="text" class="col-3 form-control-md" id="hora" required/>
+                <label for="hora" class="col-2">Heure:</label>
+                <input
+                  type="text"
+                  class="col-3 form-control-md"
+                  id="hora"
+                  required
+                  name="Heure: "
+                />
               </div>
             </div>
-            <div class="col-2 bg-red">
+            <div class="col-2">
               <img
                 id="vio50"
                 src="build/images/yanmar-mini-pelle-vio50.jpg"
@@ -61,42 +93,256 @@
           </div>
           <hr />
           <div class="row m-2">
-            <label for="data" class="col-1">Contrat:</label>
-            <input type="text" class="col-2 form-control-md" />
+            <label for="data" class="col-2">Contrat:</label>
+            <input type="text" class="col-2 form-control-md" name="Contrat"/>
           </div>
           <div class="row m-2">
-            <label for="cliente" class="col-1">Cliente:</label>
-            <input type="text" class="col-2 form-control-md" />
+            <label for="cliente" class="col-2">Cliente:</label>
+            <input type="text" class="col-2 form-control-md" name="Cliente"/>
           </div>
           <hr />
-          <div class="row">
-            <div class="col-4"><h2>Extérieur</h2></div>
-            <div class="col-4"><h2>Départ</h2></div>
-            <div class="col-4"><h2>Retour</h2></div>          
+          <div class="row bg-secondary">
+            <div class="col-4"><h4>Extérieur</h4></div>
+            <div class="col-4"><h4>Départ</h4></div>
+            <div class="col-4"><h4>Retour</h4></div>
           </div>
-          <hr>
+          <br>
           <div class="row">
             <div class="col-4"><p>Lavage</p></div>
             <div class="col-4">
-              <p> <input type="radio" name="lavage" id="depart_lavage" value="depart_lavage_OK">PRET <input type="radio" name="lavage" id="deport_lavage_non" value="depart_lavage_NON"> NON</p>
+              <p>
+                <input type="radio" name="deparLavage" id="depar_lavage_OK" value="OK" />PRET
+                <input type="radio" name="deparLavage" id="depart_lavage_non" value="NON" /> NON
+              </p>
             </div>
             <div class="col-4">
-              <p> <input type="radio" name="lavage" id="return_lavage_ok" value="return_OK">PRET <input type="radio" name="lavage" id="return_lavage_non" value="return_NON"> NON</p>
+              <p>
+                <input type="radio" name="returnLavage" id="return__lavage_OK" value="OK" />PRET
+                <input type="radio" name="returnLavage" id="return__lavage_non" value="NON" /> NON
+              </p>
             </div>
+            <hr>
           </div>
-          <hr>
           <div class="row">
-            <div class="col-4"><p>vitre</p></div>
+            <div class="col-4"><p>Vitres</p></div>
             <div class="col-4">
-              <p> <input type="radio" name="vitre" id="vitre" value="OK">PRET <input type="radio" name="vitre" id="vitre" value="NON"> NON</p>
+              <p>
+                <input type="radio" name="departVitres" id="depart_vitre_ok" value="OK" />PRET
+                <input type="radio" name="departVitres" id="depart_vitre_non" value="NON" /> NON
+              </p>
             </div>
             <div class="col-4">
-              <p> <input type="radio" name="vitre" id="vitre" value="OK">PRET <input type="radio" name="vitre" id="vitre" value="NON"> NON</p>
+              <p>
+                <input type="radio" name="returnVitres" id="return_vitre_ok" value="OK" />PRET
+                <input type="radio" name="returnVitres" id="return_vitre_non" value="NON" /> NON
+              </p>
             </div>
+            <hr>
           </div>
-          <button type="submit" class="btn btn-primary">Envoier</button>
+          <div class="row">
+            <div class="col-4"><p>Rétroviseur</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_retroviseur_ok" id="depart_retroviseur_ok" value="OK" />PRET
+                <input type="radio" name="depart_retroviseur_non" id="depart_retroviseur_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_retroviseur_ok" id="return_retroviseur_ok" value="OK" />PRET
+                <input type="radio" name="return_retroviseur_non" id="return_retroviseur_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Gyrophares</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_Gyrophares" id="depart_Gyrophares_ok" value="OK" />PRET
+                <input type="radio" name="depart_Gyrophares" id="depart_Gyrophares_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_Gyrophares" id="return_Gyrophares_ok" value="OK" />PRET
+                <input type="radio" name="return_Gyrophares" id="return_Gyrophares_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Essuie-glace</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_essuie-glace" id="depart_essuie-glace_ok" value="OK" />PRET
+                <input type="radio" name="depart_essuie-glace" id="depart_essuie-glace_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_essuie-glace" id="return_essuie-glace_ok" value="OK" />PRET
+                <input type="radio" name="return_essuie-glace" id="return_essuie-glace_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Point de graissage</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_pointGraissage" id="depart_pointGraissage_ok" value="OK" />PRET
+                <input type="radio" name="depart_pointGraissage" id="depart_pointGraissage_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_pointGraissage" id="return_pointGraissage_ok" value="OK" />PRET
+                <input type="radio" name="return_pointGraissage" id="return_pointGraissage_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Godets dents</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_godets" id="depart_godets_ok" value="OK" />PRET
+                <input type="radio" name="depart_godets" id="depart_godets_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_godets" id="return_godets_ok" value="OK" />PRET
+                <input type="radio" name="return_godets" id="return_godets_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Chenilles / Pneus</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_chenille" id="depart_chenille_ok" value="OK" />PRET
+                <input type="radio" name="depart_chenille" id="depart_chenille_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_chenille" id="return_chenille_ok" value="OK" />PRET
+                <input type="radio" name="return_chenille" id="return_chenille_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Carburant</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_carburant" id="depart_carburant_ok" value="OK" />PRET
+                <input type="radio" name="depart_carburant" id="depart_carburant_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_carburant" id="return_carburant_ok" value="OK" />PRET
+                <input type="radio" name="return_carburant" id="return_carburant_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Phares</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_phares" id="depart_phares_ok" value="OK" />PRET
+                <input type="radio" name="depart_phares" id="depart_phares_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_phares" id="return_phares_ok" value="OK" />PRET
+                <input type="radio" name="return_phares" id="return_phares_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Carrosserie</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_carrosserie" id="depart_carrosserie_ok" value="OK" />PRET
+                <input type="radio" name="depart_carrosserie" id="depart_carrosserie_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_carrosserie" id="return_carrosserie_ok" value="OK" />PRET
+                <input type="radio" name="return_carrosserie" id="return_carrosserie_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Flexibles</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_flexibles" id="depart_flexibles_ok" value="OK" />PRET
+                <input type="radio" name="depart_flexibles" id="depart_flexibles_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_flexibles" id="return_flexibles_ok" value="OK" />PRET
+                <input type="radio" name="return_flexibles" id="return_flexibles_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>Fuites</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_fuites" id="depart_fuites_ok" value="OK" />PRET
+                <input type="radio" name="depart_fuites" id="depart_fuites_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_fuites" id="return_fuites_ok" value="OK" />PRET
+                <input type="radio" name="return_fuites" id="return_fuites_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="row bg-secondary">
+            <div class="col-4"><h4>Intérieur</h4></div>
+            <div class="col-4"><h4>Départ</h4></div>
+            <div class="col-4"><h4>Retour</h4></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-4"><p>Fuites</p></div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="depart_fuites" id="depart_fuites_ok" value="OK" />PRET
+                <input type="radio" name="depart_fuites" id="depart_fuites_non" value="NON" /> NON
+              </p>
+            </div>
+            <div class="col-4">
+              <p>
+                <input type="radio" name="return_fuites" id="return_fuites_ok" value="OK" />PRET
+                <input type="radio" name="return_fuites" id="return_fuites_non" value="NON" /> NON
+              </p>
+            </div>
+            <hr>
+          </div>
+
+         <!--<button type="submit">Send</button> --> 
         </form>
+        <button id="gerar-pdf" class="btn btn-secondary mb-5 mt-4">Gerar PDF</button>
       </section>
+      
     </div>
   </body>
 </html>

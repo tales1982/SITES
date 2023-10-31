@@ -1,7 +1,15 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container {
+  /* Tamanho da folha A4 em pixels */
+  max-width: 794px; /* A largura é de aproximadamente 210 mm */
+  max-height: 1123px; /* A altura é de aproximadamente 297 mm */
 }
 
 .header {
@@ -13,10 +21,10 @@
   align-items: center;
 }
 .header__img {
-  width: 500px;
+  width: 300px;
 }
 .header__h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-decoration: underline;
 }
 @media (max-width: 768px) {
@@ -28,8 +36,20 @@
   }
 }
 
+.details p {
+  margin: 0px;
+}
+.details input {
+  border: none;
+  margin: 0 5px;
+}
+.details input:hover {
+  background-color: #ccc;
+}
+
 #vio50 {
   width: 150px;
+  margin-left: -50px;
 }
 @media (max-width: 768px) {
   #vio50 {
