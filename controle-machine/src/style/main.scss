@@ -5,6 +5,15 @@
     font-size: 14px;
   
 }
+html {
+    margin: 0;
+    padding: 0;
+  }
+  .page-break {
+    page-break-before: always; /* Quebra antes da próxima página */
+    page-break-inside: avoid; /* Evita quebras de página dentro deste elemento */
+  }
+  
 .container{
     /* Tamanho da folha A4 em pixels */
 max-width: 794px; /* A largura é de aproximadamente 210 mm */
@@ -13,8 +22,8 @@ max-height: 1123px; /* A altura é de aproximadamente 297 mm */
 }
 .header{
     
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -74,10 +83,12 @@ max-height: 1123px; /* A altura é de aproximadamente 297 mm */
         }
     }
 
-
-    video {
+/*
+ video {
         border: 3px solid #ccc;
         background: green;
         width: 400px;
         height: 400px
        }
+*/
+   

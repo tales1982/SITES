@@ -7,7 +7,7 @@ btnEnviar.addEventListener("click",()=>{
 
     //configuracao do arquivo final de PDF
     const option = {
-        magin:[0,10,10,0],
+        magin:[10,10,10,10],
         filename: "arquivo.pdf",
         html2canvas: {scale: 2},
         jsPDF:{unit: "mm", format: "a4", orientation: "portrait"}
