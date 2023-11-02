@@ -61,8 +61,6 @@ max-height: 1123px; /* A altura é de aproximadamente 297 mm */
 
 }
 
-
-
 #vio50{
     
     width: 150px;
@@ -77,3 +75,9 @@ max-height: 1123px; /* A altura é de aproximadamente 297 mm */
     }
 
 
+    video {
+        border: 3px solid #ccc;
+        background: green;
+        width: 400px;
+        height: 400px
+       }

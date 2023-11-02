@@ -57,3 +57,10 @@
     margin-left: -100px;
   }
 }
+
+video {
+  border: 3px solid #ccc;
+  background: green;
+  width: 400px;
+  height: 400px;
+}
