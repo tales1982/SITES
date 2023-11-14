@@ -1,0 +1,31 @@
+.borde{
+    display: flex;
+    flex-direction: row;
+}
+
+.borde--hr{
+    max-width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-right: 60px;
+    padding: 3px;
+
+}
+
+.borde--div1{
+    flex: 6;
+}
+.borde--div1-p{
+    margin-right: 50px;
+}
+
+.borde--div2{
+    flex: 4;
+    justify-content: space-around;
+}
+
+.borde--div3{
+    flex: 2;
+    justify-content: end;
+}

@@ -1,0 +1,46 @@
+.section3--col{
+margin-top: 10px;
+
+}
+
+.section3--row{
+display: flex;
+flex-direction:row;
+align-items: center;
+}
+
+.sectionDadosLabel-3{
+    color: #025e02;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sectionDadosInput-1{
+    width: 30px;
+    margin: 05px;
+    text-align: center;
+    color: #025e02;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sectionDadosInput-2{
+    width: 450px;
+    margin: 05px;
+    padding-left: 5px;
+    color: #025e02;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.select{
+    color: #025e02;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.element-com-seta::after {
+    content: "→";
+    color: #025e02;
+    font-size: 18px;
+    margin-left: 5px;
+}
