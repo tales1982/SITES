@@ -9,6 +9,7 @@
     padding-top: 80px;
     height: 100%;
 
+  
 
     &__col{
         @include flex-row();
@@ -20,7 +21,7 @@
         height: 700px;
         width: 50%;
 
-        &--h1{
+        &--h1-{
             font-size: 4em
         }
 
@@ -149,6 +150,9 @@
     }
 
 
+}
+#textFormH1{
+    font-size: 1.2em;
 }
 
 @media (min-width:768px) and (max-width:1200px){
