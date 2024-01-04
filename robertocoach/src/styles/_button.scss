@@ -1,12 +1,20 @@
 @import 'variables';
+.btnNav{
 
+    a{
+
+    border: none;
+        color: $btnAzul;
+    }
+    
+}
 button{
     cursor: pointer;
     width: 100px;
     height: 40px;
     background-color: transparent;
     border: none;
-    color: $navtext;
+    color: $btnAzul;
     font-weight: bold;
     font-size: 1em;
     transition: background-color .5s ease;
@@ -17,7 +25,11 @@ button{
         transform: scale(1.05);
         border: none;
     }
-
+    
+    bottom & a{
+        color: $btnAzul;
+        font-size: 1em;
+    }
 
 
     @media(max-width:767px){
