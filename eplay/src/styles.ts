@@ -53,6 +53,13 @@ export const ContaineImg = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const Img = styled.img<ImgProps>`
