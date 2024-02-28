@@ -154,7 +154,7 @@ function tabe(){
         const dieselTVA = diesel();
         const soma = (diaTVA + seguroTVA + brhTVA + transportTVA + limpezaTVA + dieselTVA) - cautionTVA
         montantImposable.textContent = soma.toFixed(2);
-        const tva = soma  * 0.16;
+        const tva = soma  * 0.17;
 
         montantTVA.textContent = tva.toFixed(2); 
         totalHorsTVA.textContent = soma.toFixed(2);
